@@ -1,0 +1,26 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+frontend/test-results/
+frontend/playwright-report/
+
+# Generated output and local tooling
+frontend/output/
+frontend/.agents/
+frontend/.github/skills/
+frontend/skillfoxx-lock.json
+coverage/
+*.log
+*.tmp
+*.temp
+*.bak
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+

@@ -1,0 +1,228 @@
+{
+  "$defs": {
+    "RealHotel": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "city": {
+          "title": "City",
+          "type": "string"
+        },
+        "country": {
+          "title": "Country",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "hotel",
+            "guest_house",
+            "hostel"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "coordinate_kind": {
+          "enum": [
+            "mapped_point",
+            "geometry_centroid"
+          ],
+          "title": "Coordinate Kind",
+          "type": "string"
+        },
+        "address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Address"
+        },
+        "website": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Website"
+        },
+        "stars": {
+          "anyOf": [
+            {
+              "maximum": 5,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stars"
+        },
+        "rating": {
+          "default": null,
+          "title": "Rating",
+          "type": "null"
+        },
+        "review_count": {
+          "default": null,
+          "title": "Review Count",
+          "type": "null"
+        },
+        "price": {
+          "default": null,
+          "title": "Price",
+          "type": "null"
+        },
+        "availability": {
+          "const": "unknown",
+          "default": "unknown",
+          "title": "Availability",
+          "type": "string"
+        },
+        "pets_allowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pets Allowed"
+        },
+        "breakfast": {
+          "default": null,
+          "title": "Breakfast",
+          "type": "null"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "source_updated_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Updated At"
+        },
+        "fetched_at": {
+          "format": "date-time",
+          "title": "Fetched At",
+          "type": "string"
+        },
+        "attribution": {
+          "default": "© OpenStreetMap contributors",
+          "title": "Attribution",
+          "type": "string"
+        },
+        "license_url": {
+          "default": "https://opendatacommons.org/licenses/odbl/1-0/",
+          "title": "License Url",
+          "type": "string"
+        },
+        "bookable": {
+          "const": false,
+          "default": false,
+          "title": "Bookable",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "city",
+        "country",
+        "category",
+        "latitude",
+        "longitude",
+        "coordinate_kind",
+        "source_url",
+        "fetched_at"
+      ],
+      "title": "RealHotel",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "fetched_at": {
+      "format": "date-time",
+      "title": "Fetched At",
+      "type": "string"
+    },
+    "attribution": {
+      "default": "© OpenStreetMap contributors",
+      "title": "Attribution",
+      "type": "string"
+    },
+    "license_url": {
+      "default": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "title": "License Url",
+      "type": "string"
+    },
+    "coverage": {
+      "additionalProperties": {
+        "items": {
+          "type": "number"
+        },
+        "type": "array"
+      },
+      "title": "Coverage",
+      "type": "object"
+    },
+    "hotels": {
+      "items": {
+        "$ref": "#/$defs/RealHotel"
+      },
+      "title": "Hotels",
+      "type": "array"
+    }
+  },
+  "required": [
+    "fetched_at",
+    "coverage",
+    "hotels"
+  ],
+  "title": "HotelSnapshot",
+  "type": "object"
+}

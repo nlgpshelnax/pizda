@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D01",
+    "name": "baseline",
+    "bundle_changes": {},
+    "request_changes": {},
+    "required_codes": [],
+    "expected_valid": true
+  },
+  {
+    "id": "D02",
+    "name": "changed dates",
+    "bundle_changes": {},
+    "request_changes": {
+      "check_in": "2026-11-12"
+    },
+    "required_codes": [
+      "QUOTE_SCOPE_MISMATCH"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D03",
+    "name": "added child",
+    "bundle_changes": {},
+    "request_changes": {
+      "guests.children_ages": [
+        7
+      ]
+    },
+    "required_codes": [
+      "QUOTE_SCOPE_MISMATCH"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D04",
+    "name": "pet policy unknown",
+    "bundle_changes": {},
+    "request_changes": {
+      "guests.pets": 1
+    },
+    "required_codes": [
+      "PETS_UNCONFIRMED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D05",
+    "name": "breakfast missing",
+    "bundle_changes": {
+      "hotel.breakfast": false
+    },
+    "request_changes": {},
+    "required_codes": [
+      "BREAKFAST_REQUIRED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D06",
+    "name": "required stars",
+    "bundle_changes": {},
+    "request_changes": {
+      "min_stars": 5
+    },
+    "required_codes": [
+      "STARS_REQUIRED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D07",
+    "name": "budget overrun",
+    "bundle_changes": {},
+    "request_changes": {
+      "budget.amount": "1.00"
+    },
+    "required_codes": [
+      "OVER_BUDGET"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D08",
+    "name": "unknown fees",
+    "bundle_changes": {
+      "mandatory_fees_known": false
+    },
+    "request_changes": {},
+    "required_codes": [
+      "UNKNOWN_FEES"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D09",
+    "name": "hotel capacity",
+    "bundle_changes": {
+      "hotel.max_guests": 1
+    },
+    "request_changes": {},
+    "required_codes": [
+      "HOTEL_CAPACITY"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D10",
+    "name": "hotel capacity unknown",
+    "bundle_changes": {
+      "hotel.max_guests": null
+    },
+    "request_changes": {},
+    "required_codes": [
+      "HOTEL_CAPACITY_UNCONFIRMED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D11",
+    "name": "children policy unknown",
+    "bundle_changes": {
+      "hotel.children_allowed": null
+    },
+    "request_changes": {
+      "guests.children_ages": [
+        7
+      ]
+    },
+    "required_codes": [
+      "CHILDREN_UNCONFIRMED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D12",
+    "name": "invalid outbound",
+    "bundle_changes": {
+      "outbound.arrival_at": "2026-11-10T08:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "INVALID_TRANSPORT_TIME"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D13",
+    "name": "invalid return",
+    "bundle_changes": {
+      "inbound.departure_at": "2026-11-09T08:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "INVALID_RETURN_TIME"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D14",
+    "name": "late checkin",
+    "bundle_changes": {
+      "outbound.arrival_at": "2026-11-11T01:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "MISSED_CHECKIN"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D15",
+    "name": "early arrival waiting",
+    "bundle_changes": {
+      "outbound.arrival_at": "2026-11-10T10:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "EARLY_CHECKIN_UNCONFIRMED"
+    ],
+    "expected_valid": true
+  },
+  {
+    "id": "D16",
+    "name": "unreachable return",
+    "bundle_changes": {
+      "inbound.departure_at": "2026-11-10T14:30:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "RETURN_UNREACHABLE"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D17",
+    "name": "stay dates mismatch",
+    "bundle_changes": {
+      "hotel.check_in_at": "2026-11-11T14:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "STAY_MISMATCH"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D18",
+    "name": "invalid stay",
+    "bundle_changes": {
+      "hotel.check_out_at": "2026-11-09T12:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "INVALID_STAY"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D19",
+    "name": "naive time",
+    "bundle_changes": {
+      "outbound.arrival_at": "2026-11-10T12:30:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "SCHEMA_ERROR"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D20",
+    "name": "negative price",
+    "bundle_changes": {
+      "hotel.price.amount": "-1.00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "SCHEMA_ERROR"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D21",
+    "name": "unsupported currency",
+    "bundle_changes": {
+      "hotel.price.currency": "USD"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "SCHEMA_ERROR"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D22",
+    "name": "invalid child age",
+    "bundle_changes": {},
+    "request_changes": {
+      "guests.children_ages": [
+        18
+      ]
+    },
+    "required_codes": [
+      "SCHEMA_ERROR"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D23",
+    "name": "transfer capacity",
+    "bundle_changes": {
+      "transfer.capacity": 1
+    },
+    "request_changes": {},
+    "required_codes": [
+      "TRANSFER_CAPACITY"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D24",
+    "name": "missing transfer",
+    "bundle_changes": {
+      "transfer": null
+    },
+    "request_changes": {},
+    "required_codes": [
+      "SCHEMA_ERROR"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D25",
+    "name": "short connection",
+    "bundle_changes": {
+      "outbound.segments": [
+        {
+          "origin": "MOW",
+          "destination": "LED",
+          "departure_at": "2026-11-10T09:00:00+03:00",
+          "arrival_at": "2026-11-10T10:00:00+03:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Europe/Moscow"
+        },
+        {
+          "origin": "LED",
+          "destination": "AER",
+          "departure_at": "2026-11-10T10:15:00+03:00",
+          "arrival_at": "2026-11-10T12:30:00+03:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    "request_changes": {},
+    "required_codes": [
+      "CONNECTION_TOO_SHORT"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D26",
+    "name": "airport change without route",
+    "bundle_changes": {
+      "outbound.segments": [
+        {
+          "origin": "MOW",
+          "destination": "LED",
+          "departure_at": "2026-11-10T09:00:00+03:00",
+          "arrival_at": "2026-11-10T10:00:00+03:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Europe/Moscow"
+        },
+        {
+          "origin": "OTHER",
+          "destination": "AER",
+          "departure_at": "2026-11-10T10:15:00+03:00",
+          "arrival_at": "2026-11-10T12:30:00+03:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    "request_changes": {},
+    "required_codes": [
+      "AIRPORT_CHANGE_UNCONFIRMED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D27",
+    "name": "transfer closed",
+    "bundle_changes": {
+      "transfer.available_until": "2026-11-10T01:00:00+03:00"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "TRANSFER_CLOSED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D28",
+    "name": "child seat unknown",
+    "bundle_changes": {},
+    "request_changes": {
+      "child_seats_required": 1
+    },
+    "required_codes": [
+      "CHILD_SEAT_UNCONFIRMED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D29",
+    "name": "real quote missing sources",
+    "bundle_changes": {
+      "provenance.kind": "live"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "SOURCE_UNCONFIRMED"
+    ],
+    "expected_valid": false
+  },
+  {
+    "id": "D30",
+    "name": "expired real quote",
+    "bundle_changes": {
+      "provenance.kind": "snapshot",
+      "provenance.fetched_at": "2000-01-01T00:00:00Z",
+      "provenance.valid_until": "2000-01-02T00:00:00Z"
+    },
+    "request_changes": {},
+    "required_codes": [
+      "QUOTE_EXPIRED"
+    ],
+    "expected_valid": false
+  }
+]

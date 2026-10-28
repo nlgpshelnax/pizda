@@ -1,0 +1,103 @@
+[
+  {
+    "id": "sochi",
+    "city": "Сочи",
+    "country": "RU",
+    "latitude": 43.6,
+    "longitude": 39.73,
+    "timezone": "Europe/Moscow",
+    "vibes": [
+      "beach",
+      "nature"
+    ],
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://www.openstreetmap.org/#map=11/43.60/39.73",
+    "seasonality_kind": "curated_hypothesis",
+    "seasonality_verified": false,
+    "climatology": null
+  },
+  {
+    "id": "kazan",
+    "city": "Казань",
+    "country": "RU",
+    "latitude": 55.79,
+    "longitude": 49.12,
+    "timezone": "Europe/Moscow",
+    "vibes": [
+      "city_walks",
+      "culture"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "source_url": "https://www.openstreetmap.org/#map=11/55.79/49.12",
+    "seasonality_kind": "curated_hypothesis",
+    "seasonality_verified": false,
+    "climatology": null
+  },
+  {
+    "id": "dubai",
+    "city": "Дубай",
+    "country": "AE",
+    "latitude": 25.2,
+    "longitude": 55.27,
+    "timezone": "Asia/Dubai",
+    "vibes": [
+      "beach",
+      "city_walks"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      10,
+      11,
+      12
+    ],
+    "source_url": "https://www.openstreetmap.org/#map=11/25.20/55.27",
+    "seasonality_kind": "curated_hypothesis",
+    "seasonality_verified": false,
+    "climatology": null
+  },
+  {
+    "id": "hurghada",
+    "city": "Хургада",
+    "country": "EG",
+    "latitude": 27.25,
+    "longitude": 33.81,
+    "timezone": "Africa/Cairo",
+    "vibes": [
+      "beach"
+    ],
+    "months": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "source_url": "https://www.openstreetmap.org/#map=11/27.25/33.81",
+    "seasonality_kind": "curated_hypothesis",
+    "seasonality_verified": false,
+    "climatology": null
+  }
+]

@@ -1,0 +1,25 @@
+.booking-date-field {min-width:0;}
+.date-input-wrap {position:relative;}
+.booking-form .date-input {padding-right:46px;}
+.date-input::-webkit-calendar-picker-indicator {opacity:0;pointer-events:none;}
+.date-picker-trigger {position:absolute;right:2px;bottom:1px;width:40px;height:40px;display:grid;place-items:center;color:var(--accent-text);border-radius:4px;}
+.date-picker-trigger:hover {background:var(--surface);}
+.date-picker {position:fixed;margin:0;right:auto;bottom:auto;width:360px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding:0;border:1px solid var(--line);border-radius:8px;color:var(--navy);background:var(--white);box-shadow:0 12px 36px rgb(47 65 86 / .2);overscroll-behavior:contain;}
+.date-picker::backdrop {background:transparent;}
+.date-picker-inner {padding:20px;}
+.date-picker-title {display:flex;align-items:start;justify-content:space-between;gap:12px;}
+.date-picker-title h2 {font-size:17px;line-height:1.35;font-weight:600;}
+.date-picker-title p {font-size:12px;line-height:1.5;color:var(--muted);margin-top:4px;}
+.date-picker-title button,.date-picker-month button {display:grid;place-items:center;width:40px;height:40px;border-radius:4px;flex-shrink:0;}
+.date-picker-title button:hover,.date-picker-month button:hover:not(:disabled) {background:var(--surface);}
+.date-picker-month {display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 8px;}
+.date-picker-month strong {font-size:14px;font-weight:600;text-transform:capitalize;}
+.date-weekdays,.date-days {display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;}
+.date-weekdays span {text-align:center;font-size:12px;color:var(--muted);padding:5px 0;}
+.date-days button {aspect-ratio:1;min-width:0;min-height:38px;border-radius:4px;font-size:13px;font-variant-numeric:tabular-nums;}
+.date-days button:hover:not(:disabled) {background:var(--surface);}
+.date-days button[aria-current='date']:not(.is-selected) {box-shadow:inset 0 0 0 1px var(--teal);}
+.date-days button.is-selected,.date-days button.is-selected:hover:not(:disabled) {color:var(--white);background:var(--navy);}
+.date-picker-help {color:var(--muted);font-size:11px;line-height:1.5;margin-top:12px;}
+@media(max-width:767px) {.date-picker-inner {padding:16px;}.date-picker-help {display:none;}}
+@media(max-width:360px) {.booking-form .booking-date-field {grid-column:1/-1;}}

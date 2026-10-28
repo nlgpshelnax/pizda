@@ -1,0 +1,238 @@
+@import url('/fonts/fonts.css');
+
+/* Existing brand. Light product UI; semantic tokens shared by every surface. */
+:root {font-family:'Montserrat','Century Gothic',Arial,sans-serif;color:#2f4156;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;--navy:#2f4156;--teal:#567c8d;--sky:#c8d9e6;--beige:#f5efeb;--white:#fff;--muted:#536371;--line:#d9e1e6;--surface:#f5f7f8;--warning:#775239;--accent-text:#3d6173;color-scheme:light;}
+* {box-sizing:border-box;}
+body {margin:0;min-width:320px;}
+button,input,textarea,select {font:inherit;color:inherit;}
+button {border:0;background:none;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s;}
+button,a {touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+button:disabled {opacity:.55;cursor:not-allowed;}
+button:hover:not(:disabled),a:hover {color:var(--accent-text);}
+button,input,textarea,select,a {outline-offset:3px;}
+:focus-visible {outline:2px solid var(--teal);}
+p,h1,h2,h3,h4 {margin:0;}
+button,p,h1,h2,h3,h4,a,strong,span {overflow-wrap:anywhere;}
+img {display:block;max-width:100%;object-fit:cover;}
+a {color:var(--accent-text);text-underline-offset:3px;}
+svg {flex-shrink:0;stroke-width:1.7;}
+button svg {pointer-events:none;}
+.app-layout {font-size:14px;line-height:1.5;font-variant-numeric:tabular-nums;min-height:100dvh;}
+.header {height:64px;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 24px;border-bottom:1px solid var(--line);background:white;}
+.brand-button {padding:0;text-align:left;flex-shrink:0;}
+.brand {display:flex;align-items:center;font-family:'Century Gothic','Montserrat',sans-serif;font-size:23px;font-weight:600;letter-spacing:-.9px;line-height:1;}
+.brand-mark {font:37px/1 'Prata',Georgia,serif;color:var(--teal);letter-spacing:-4px;margin-right:7px;}
+.header nav {display:flex;align-items:center;gap:20px;min-width:0;}
+.demo-badge {font-size:12px;color:var(--muted);}
+.help-button,.nav-link,.new-trip {display:flex;align-items:center;gap:6px;font-size:13px;min-height:36px;padding:6px 0;}
+.new-trip {background:var(--surface);border-radius:4px;padding:8px 12px;}
+.new-trip:hover:not(:disabled) {background:#e8eff2;}
+.skip-link {position:fixed;top:-100px;left:12px;z-index:10;padding:12px;background:var(--navy);color:white;}
+.skip-link:focus {top:8px;}
+.primary-button,.secondary-button {display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 14px;font-size:13px;font-weight:500;border-radius:4px;white-space:nowrap;}
+.primary-button {color:white;background:var(--navy);border:1px solid var(--navy);}
+.primary-button:hover:not(:disabled) {color:white;background:var(--accent-text);border-color:var(--accent-text);}
+.secondary-button {border:1px solid #7a8e9c;background:white;}
+.secondary-button:hover:not(:disabled) {background:var(--surface);}
+.full-width {width:100%;}
+.text-link {display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:4px 0;font-size:13px;color:var(--accent-text);text-align:left;}
+.text-link:hover:not(:disabled) {text-decoration:underline;text-underline-offset:3px;}
+.icon-button {display:grid;place-items:center;width:36px;height:36px;border-radius:4px;}
+.icon-button:hover {background:var(--surface);}
+.composer {padding:13px 14px 10px;border:1px solid #7a8e9c;border-radius:6px;background:white;}
+.composer:focus-within {border-color:var(--teal);outline:1px solid var(--teal);}
+.composer label {display:block;font-size:12px;font-weight:500;margin-bottom:8px;}
+.composer textarea {display:block;width:100%;border:0;resize:vertical;min-height:58px;max-height:150px;padding:0;background:transparent;font-size:15px;line-height:1.6;}
+.composer textarea:focus {outline:0;}
+.composer textarea:focus-visible {outline:2px solid var(--teal);outline-offset:4px;}
+.composer textarea::placeholder {color:var(--muted);opacity:1;}
+.composer-error {margin-top:8px;color:var(--warning);font-size:12px;line-height:1.5;}
+.composer-bottom {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;}
+.composer-bottom>span {font-size:12px;color:var(--muted);}
+.send-button {display:grid;place-items:center;width:36px;height:36px;flex-shrink:0;background:var(--navy);color:white;border-radius:4px;}
+.send-button:hover:not(:disabled) {background:var(--accent-text);color:white;}
+@media (hover:none) and (pointer:coarse) {
+  .composer-bottom {justify-content:flex-end;}
+  .composer-bottom>span {display:none;}
+}
+/* Start screen only. The working 40/60 workspace keeps its existing rules. */
+.welcome {max-width:1280px;padding:48px 40px 24px;margin:0 auto;}
+.welcome-hero {display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:64px;align-items:center;}
+.welcome-start {min-width:0;}
+.welcome-start h1 {font:40px/1.32 'Prata',Georgia,serif;letter-spacing:-.9px;max-width:14ch;text-wrap:balance;}
+.welcome-start>p {font-size:15px;line-height:1.8;margin:15px 0 24px;color:var(--muted);max-width:49ch;}
+.welcome .composer {padding:16px 18px 12px;border:1px solid var(--teal);border-radius:8px;}
+.welcome .composer:focus-within {outline:2px solid var(--teal);outline-offset:3px;}
+.welcome .composer label {font-size:13px;font-weight:500;}
+.welcome .composer textarea {min-height:88px;font-size:16px;}
+.welcome .send-button {display:flex;align-items:center;justify-content:center;gap:8px;width:auto;min-height:44px;padding:0 14px;font-size:13px;font-weight:600;}
+.welcome-start>.welcome-hint {font-size:12px;margin:12px 0 0;line-height:1.7;max-width:58ch;}
+.welcome-examples {margin-top:22px;}
+.welcome-examples>span {display:block;color:var(--muted);font-size:12px;margin-bottom:5px;}
+.welcome-examples>div {display:flex;flex-wrap:wrap;gap:3px 18px;}
+.welcome-examples button {font-size:13px;min-height:40px;padding:7px 0;text-align:left;color:var(--accent-text);border-bottom:1px solid var(--sky);}
+.welcome-examples button:hover:not(:disabled) {border-color:var(--teal);color:var(--navy);}
+.welcome-photo {margin:0;min-width:0;}
+.welcome-photo-frame {height:clamp(440px,43vw,552px);border-radius:10px;overflow:hidden;background:var(--sky);}
+.welcome-photo img {width:100%;height:100%;object-fit:cover;object-position:50% 58%;}
+.welcome-photo figcaption {display:flex;justify-content:space-between;align-items:start;gap:16px;margin-top:12px;}
+.welcome-photo figcaption strong {font-size:14px;line-height:1.6;font-weight:600;}
+.welcome-photo figcaption span {display:block;font-size:12px;color:var(--muted);line-height:1.7;margin-top:1px;}
+.welcome-photo figcaption>a {font-size:12px;text-align:right;color:var(--muted);padding:3px 0;min-height:24px;}
+.welcome-photo figcaption>a:hover {color:var(--accent-text);}
+.welcome-footer {font-size:12px;color:var(--muted);line-height:1.7;margin-top:32px;padding-top:16px;border-top:1px solid var(--line);}
+@media(min-width:901px) and (max-width:1199px) {
+  .welcome {padding:36px 28px 22px;}
+  .welcome-hero {gap:36px;}
+  .welcome-start h1 {font-size:35px;}
+  .welcome-start>p {font-size:14px;}
+  .welcome .composer {padding:14px;}
+  .welcome .composer-bottom>span {font-size:11px;max-width:250px;}
+}
+@media(max-width:900px) {
+  .welcome {max-width:760px;padding:30px 24px 22px;}
+  .welcome-hero {grid-template-columns:1fr;gap:28px;}
+  .welcome-start h1 {font-size:34px;max-width:22ch;}
+  .welcome-photo-frame {height:280px;}
+  .welcome-photo img {object-position:50% 43%;}
+  .welcome-footer {margin-top:24px;}
+}
+/* Native dialogs keep focus and Escape behavior. Scroll is inside the dialog. */
+.modal {width:620px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 40px);border:1px solid var(--line);border-radius:8px;padding:0;color:var(--navy);background:white;overscroll-behavior:contain;}
+.modal-wide {width:780px;}
+.modal::backdrop {background:rgb(47 65 86 / .45);}
+.modal-inner {padding:22px 26px;}
+.modal-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;}
+.modal-heading h2 {font-size:21px;line-height:1.35;letter-spacing:-.4px;font-weight:600;}
+.modal p {font-size:13px;line-height:1.7;}
+.modal-intro {color:var(--muted);margin-bottom:18px;}
+.modal-actions {display:flex;justify-content:flex-end;gap:12px;margin-top:22px;}
+.edit-form>label {display:block;font-size:13px;font-weight:500;margin-bottom:8px;}
+.edit-form input {width:100%;min-height:44px;border:1px solid #7a8e9c;padding:10px 12px;border-radius:4px;font-size:15px;margin-bottom:18px;}
+.help-steps {display:grid;gap:18px;margin-bottom:20px;}
+.help-steps>div {position:relative;padding-left:31px;}
+.help-steps>div>svg {position:absolute;left:0;top:2px;width:18px;height:18px;color:var(--teal);}
+.help-steps h3 {font-size:14px;font-weight:600;margin-bottom:4px;}
+.help-steps p,.help-demo p {color:var(--muted);}
+.help-demo {border-top:1px solid var(--line);padding-top:16px;}
+.help-demo>strong {font-size:14px;display:block;margin-bottom:6px;}
+.credits-link {color:var(--accent-text);padding:10px 0;margin:6px 0 12px;font-size:13px;}
+.photo-credits {display:grid;gap:18px;}
+.photo-credits p>strong,.photo-credits p>span {display:block;}
+.photo-credits a {margin-right:7px;}
+.booking-summary,.detail-trip-header {display:flex;align-items:center;gap:16px;margin-bottom:16px;}
+.booking-summary img,.detail-trip-header img {width:96px;height:74px;border-radius:4px;flex-shrink:0;}
+.booking-summary span {font-size:12px;color:var(--muted);}
+.booking-summary h3,.detail-trip-header h3 {font-size:16px;font-weight:600;margin:3px 0;}
+.booking-summary h3 small,.detail-trip-header small {font-size:12px;font-weight:500;}
+.booking-summary p,.detail-trip-header p {font-size:12px;color:var(--muted);}
+.booking-form {display:grid;grid-template-columns:1.25fr .75fr 1.4fr;gap:12px;border-top:1px solid var(--line);padding-top:16px;}
+.booking-form label {display:block;font-size:12px;font-weight:500;}
+.booking-form input {display:block;width:100%;min-height:42px;padding:8px 10px;border:1px solid #7a8e9c;border-radius:4px;margin-top:6px;background:white;font-size:14px;}
+.booking-form input[aria-invalid='true'] {border-color:var(--warning);}
+.field-error {display:block;color:var(--warning);font-size:12px!important;line-height:1.6;margin-top:6px;}
+.booking-live-total,.confirmed-plan-total {display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:12px;}
+.booking-live-total span,.confirmed-plan-total span {font-size:12px;color:var(--muted);}
+.booking-live-total strong,.confirmed-plan-total strong {font-size:24px;font-weight:600;letter-spacing:-.6px;white-space:nowrap;}
+.booking-blocker {padding:8px 0;}
+.booking-cost-details {border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:14px 0;}
+.booking-cost-details summary,.detail-section summary {cursor:pointer;font-size:13px;font-weight:500;min-height:40px;padding:10px 0;}
+.booking-visa {display:flex;align-items:start;gap:7px;padding-bottom:12px;}
+.booking-compact-risk {color:var(--muted);margin-bottom:14px;}
+.checkbox-label {display:flex;gap:10px;align-items:start;font-size:12px;line-height:1.7;margin:16px 0;cursor:pointer;}
+.checkbox-label input {width:17px;height:17px;flex-shrink:0;accent-color:var(--teal);margin:3px 0 0;}
+.booking-submit {padding-top:4px;}
+.form-error {color:var(--warning);margin-bottom:12px;}
+.booking-confirmed {display:flex;align-items:center;gap:12px;padding:12px 14px;margin-bottom:18px;background:#eef3f5;border-radius:4px;}
+.booking-confirmed strong {font-size:14px;font-weight:600;}
+.booking-confirmed p {font-size:12px;margin-top:2px;color:var(--muted);}
+.booking-estimate {padding:10px 12px;background:var(--beige);margin-bottom:16px;display:flex;align-items:start;gap:8px;}
+.post-booking {border-top:1px solid var(--line);padding-top:16px;margin-top:18px;}
+.post-booking h3 {font-size:14px;font-weight:600;margin-bottom:7px;}
+.post-booking-actions {display:grid;grid-template-columns:1fr 1fr;gap:4px 20px;}
+.post-booking-actions button {display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:var(--accent-text);text-align:left;min-height:36px;padding:6px 0;}
+.booking-bottom-links {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;}
+.cancel-booking-link {color:var(--warning);font-size:12px;padding:8px 0;}
+.cancel-note {color:var(--muted);margin-top:12px;}
+.cancel-confirm-button {background:var(--warning);border-color:var(--warning);}
+.cancel-confirm-button:hover:not(:disabled) {background:var(--warning);border-color:var(--warning);}
+.cancel-success-close {margin-top:20px;}
+.cost-breakdown {padding:7px 0 12px;}
+.cost-breakdown>p {font-size:12px;color:var(--muted);margin-bottom:9px;}
+.cost-row,.cost-total {display:flex;align-items:center;justify-content:space-between;gap:15px;padding:8px 0;font-size:13px;}
+.cost-row>span {display:flex;align-items:center;gap:8px;}
+.cost-row strong {font-weight:500;white-space:nowrap;}
+.cost-total {border-top:1px solid var(--line);font-weight:600;margin-top:4px;}
+.cost-breakdown>.muted {margin-top:8px;font-size:12px;}
+.trip-reminders {border-top:1px solid var(--line);padding-top:16px;margin-top:16px;}
+.reminders-heading {display:flex;align-items:center;justify-content:space-between;gap:15px;}
+.reminders-heading h3 {display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;}
+.reminder-toggle {display:flex;align-items:center;gap:7px;font-size:12px;cursor:pointer;}
+.reminder-toggle input {accent-color:var(--teal);width:17px;height:17px;margin:0;}
+.reminder-options {display:flex;align-items:start;flex-wrap:wrap;gap:12px 18px;padding:14px 0 8px;}
+.reminder-option {display:flex;align-items:start;gap:7px;cursor:pointer;font-size:13px;}
+.reminder-option input {accent-color:var(--teal);width:16px;height:16px;margin:3px 0 0;}
+.reminder-option small {display:block;font-size:11px;color:var(--muted);margin-top:4px;}
+.reminder-option-past {opacity:.65;cursor:default;}
+.reminder-options>.secondary-button {font-size:12px;min-height:34px;padding:6px 10px;}
+.reminder-help,.reminder-saved-times {font-size:12px!important;color:var(--muted);margin-top:9px;}
+.reminder-summary {display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px;}
+.reminder-summary p {font-size:12px;}
+.reminder-actions {display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:5px;}
+.reminder-actions small {font-size:11px;color:var(--muted);}
+.reminder-feedback,.reminder-due {display:flex;align-items:start;gap:7px;font-size:12px!important;margin-top:9px;color:var(--accent-text);}
+.spin {animation:spin .8s linear infinite;}
+@keyframes spin {to {transform:rotate(360deg);}}
+@media(max-width:767px) {
+  .header {height:58px;min-height:58px;padding:0 16px;gap:12px;}
+  .brand {font-size:20px;}
+  .brand-mark {font-size:33px;}
+  .header nav {gap:12px;}
+  .demo-badge,.help-button>span {display:none;}
+  .help-button {min-width:32px;justify-content:center;}
+  .new-trip {font-size:0;gap:0;padding:8px;min-width:36px;}
+  .booking-nav {font-size:0;gap:0;}
+  .welcome {padding:24px 16px 20px;}
+  .welcome-start h1 {font-size:30px;line-height:1.34;letter-spacing:-.5px;max-width:14ch;}
+  .welcome-start>p {font-size:14px;line-height:1.7;margin:12px 0 20px;}
+  .welcome .composer {padding:13px 14px 10px;}
+  .welcome .composer textarea {min-height:82px;font-size:16px;}
+  .welcome-start>.welcome-hint {font-size:12px;line-height:1.7;margin-top:11px;}
+  .welcome-examples {margin-top:18px;}
+  .welcome-examples>div {gap:3px 15px;}
+  .welcome-hero {gap:24px;}
+  .welcome-photo-frame {height:194px;border-radius:8px;}
+  .welcome-photo img {object-position:50% 31%;}
+  .welcome-photo figcaption {gap:12px;margin-top:9px;}
+  .welcome-photo figcaption strong {font-size:13px;}
+  .welcome-photo figcaption span {font-size:12px;}
+  .welcome-photo figcaption>a {font-size:12px;}
+  .welcome-footer {font-size:11px;margin-top:20px;padding-top:13px;}
+  .composer textarea {font-size:16px;}
+  .composer-bottom>span {font-size:11px;max-width:225px;}
+  .send-button {width:40px;height:40px;}
+  .modal {max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px);}
+  .modal-inner {padding:16px;}
+  .modal-heading {margin-bottom:14px;}
+  .modal-heading h2 {font-size:19px;}
+  .modal-actions {flex-direction:column;}
+  .booking-form {grid-template-columns:1.3fr 1fr;}
+  .booking-form .origin-field {grid-column:1/-1;}
+  .booking-form input {font-size:16px;}
+  .booking-live-total {align-items:start;}
+  .booking-live-total strong {font-size:22px;}
+  .booking-summary img {width:74px;height:68px;}
+  .booking-summary,.detail-trip-header {gap:12px;}
+  .booking-summary h3,.detail-trip-header h3 {font-size:14px;}
+  .post-booking-actions {grid-template-columns:1fr;}
+  .reminders-heading {align-items:start;}
+  .reminders-heading h3 {font-size:13px;}
+  .reminder-toggle span {display:none;}
+  .reminder-toggle {min-width:32px;min-height:32px;justify-content:center;}
+  .reminder-options {flex-direction:column;gap:15px;}
+  .reminder-options>.secondary-button {width:100%;min-height:40px;}
+  .reminder-actions {gap:4px;}
+  .reminder-summary {align-items:start;}
+  .booking-bottom-links {align-items:start;}
+}
+@media(prefers-reduced-motion:reduce) {*,*:before,*:after {animation:none!important;transition:none!important;scroll-behavior:auto!important;}}

@@ -1,0 +1,21 @@
+[
+["FR","Париж","Paris","CDG"],["FR","Ницца","Nice","NCE"],["FR","Шамони-Монблан","Chamonix","GVA"],["FR","Анси","Annecy","GVA"],["FR","Виши","Vichy","CFE"],["FR","Биарриц","Biarritz","BIQ"],["FR","Бордо","Bordeaux","BOD"],["FR","Страсбург","Strasbourg","SXB"],["FR","Марсель","Marseille","MRS"],
+["IT","Рим","Rome","FCO"],["IT","Палермо","Palermo","PMO"],["IT","Кортина-д’Ампеццо","Cortina d'Ampezzo","VCE"],["IT","Больцано","Bolzano","VRN"],["IT","Монтекатини-Терме","Montecatini Terme","PSA"],["IT","Флоренция","Florence","FLR"],["IT","Венеция","Venice","VCE"],["IT","Амальфи","Amalfi","NAP"],["IT","Милан","Milan","MXP"],
+["ES","Мадрид","Madrid","MAD"],["ES","Барселона","Barcelona","BCN"],["ES","Малага","Malaga","AGP"],["ES","Сьерра-Невада","Sierra Nevada","GRX"],["ES","Кангас-де-Онис","Cangas de Onis","OVD"],["ES","Арчена","Archena","RMU"],["ES","Севилья","Seville","SVQ"],["ES","Сан-Себастьян","San Sebastian","EAS"],["ES","Тенерифе","Santa Cruz de Tenerife","TFS"],
+["DE","Берлин","Berlin","BER"],["DE","Рюген","Rügen Island","RLG"],["DE","Гармиш-Партенкирхен","Garmisch-Partenkirchen","MUC"],["DE","Берхтесгаден","Berchtesgaden","SZG"],["DE","Баден-Баден","Baden-Baden","FKB"],["DE","Мюнхен","Munich","MUC"],["DE","Фюссен","Fussen","FMM"],["DE","Гамбург","Hamburg","HAM"],["DE","Дрезден","Dresden","DRS"],
+["GB","Лондон","London","LHR"],["GB","Эдинбург","Edinburgh","EDI"],["GB","Манчестер","Manchester","MAN"],["GB","Бат","Bath","BRS"],["GB","Уиндермир","Windermere","MAN"],["GB","Авимор","Aviemore","INV"],["GB","Брайтон","Brighton","LGW"],["GB","Оксфорд","Oxford","LHR"],["GB","Корнуолл","Newquay","NQY"],
+["AT","Вена","Vienna","VIE"],["AT","Инсбрук","Innsbruck","INN"],["AT","Целль-ам-Зе","Zell am See","SZG"],["AT","Бад-Гастайн","Bad Gastein","SZG"],
+["CH","Церматт","Zermatt","ZRH"],["CH","Интерлакен","Interlaken","ZRH"],["CH","Цюрих","Zurich","ZRH"],["CH","Бад-Рагац","Bad Ragaz","ZRH"],
+["PT","Фару","Faro","FAO"],["PT","Лиссабон","Lisbon","LIS"],["PT","Порту","Porto","OPO"],["PT","Фуншал","Funchal","FNC"],
+["GR","Ханья","Chania","CHQ"],["GR","Афины","Athens","ATH"],["GR","Санторини","Fira","JTR"],["GR","Метеоры","Kalambaka","SKG"],
+["CZ","Прага","Prague","PRG"],["CZ","Карловы Вары","Karlovy Vary","PRG"],["CZ","Чески-Крумлов","Cesky Krumlov","PRG"],
+["HU","Будапешт","Budapest","BUD"],["HU","Хевиз","Heviz","SOB"],["HU","Эгер","Eger","BUD"],
+["NL","Амстердам","Amsterdam","AMS"],["NL","Гаага","The Hague","RTM"],["NL","Роттердам","Rotterdam","RTM"],
+["BE","Брюссель","Brussels","BRU"],["BE","Брюгге","Bruges","OST"],["BE","Гент","Ghent","BRU"],
+["NO","Осло","Oslo","OSL"],["NO","Берген","Bergen","BGO"],["NO","Тромсё","Tromsø","TOS"],
+["SE","Стокгольм","Stockholm","ARN"],["SE","Гётеборг","Gothenburg","GOT"],["SE","Оре","Are","OSD"],
+["RS","Белград","Belgrade","BEG"],["RS","Врнячка-Баня","Vrnjacka Banja","BEG"],["RS","Копаоник","Kopaonik","BEG"],
+["ME","Будва","Budva","TIV"],["ME","Котор","Kotor","TIV"],["ME","Жабляк","Zabljak","TGD"],
+["BA","Сараево","Sarajevo","SJJ"],["BA","Яхорина","Jahorina","SJJ"],
+["AD","Андорра-ла-Велья","Andorra la Vella","BCN"],["MC","Монте-Карло","Monte Carlo","NCE"],["SM","Сан-Марино","San Marino","BLQ"],["LI","Вадуц","Vaduz","ZRH"],["LU","Люксембург","Luxembourg","LUX"],["MT","Валлетта","Valletta","MLA"],["VA","Ватикан","Vatican City","FCO"]
+]

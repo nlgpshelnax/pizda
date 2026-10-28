@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>О!дин запрос · Предпросмотр</title>
+  <link rel="icon" href="/favicon.svg" /><link rel="stylesheet" href="/card-variants.css" />
+  <script>
+    // Preview session is memory-only; the regular site's saved trip remains untouched.
+    (() => {
+      const data = new Map();
+      const memory = { get length() { return data.size; }, clear() { data.clear(); }, getItem(key) { return data.has(String(key)) ? data.get(String(key)) : null; }, key(i) { return [...data.keys()][i] ?? null; }, removeItem(key) { data.delete(String(key)); }, setItem(key,value) { data.set(String(key),String(value)); } };
+      Object.defineProperty(window,'localStorage',{value:memory,configurable:true});
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    // Start with a real query, processed by the same local agent and catalog.
+    const query='12 июня 2027 из Москвы в Европу, хочу прогулки и архитектуру, 1 взрослый, до 130 тысяч';
+    const timer=setInterval(() => {
+      const input=document.querySelector('#welcome-message');
+      const send=document.querySelector('button[aria-label="Отправить сообщение"]');
+      if(!input || !send) return;
+      clearInterval(timer);
+      Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set.call(input,query);
+      input.dispatchEvent(new Event('input',{bubbles:true}));
+      setTimeout(() => send.click(),0);
+    },100);
+  </script>
+</body>
+</html>

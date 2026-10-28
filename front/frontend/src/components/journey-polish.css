@@ -1,0 +1,23 @@
+/* Result cards: keep the existing dense grid while making the trip image and
+   practical details easier to scan at the sizes used in the workspace. */
+.workspace .journey-recommended {border-top:1px solid #d1dce2;padding-top:11px;}
+.workspace .journey-overview {grid-template-columns:110px minmax(0,1fr);}
+.workspace .journey-photo {width:110px;height:88px;}
+.workspace .journey-overview h2 {text-wrap:balance;}
+.workspace .journey-hotel {overflow-wrap:anywhere;}
+.workspace .journey-card .route-stops strong {font-size:12px;}
+.workspace .journey-card .journey-facts p {font-size:13px;line-height:1.5;}
+.workspace .compact-overview span,
+.workspace .compact-overview p,
+.workspace .compact-difference,
+.workspace .compact-bottom>button {font-size:12px;}
+.workspace .trip-price>strong,
+.workspace .compact-bottom strong {font-variant-numeric:tabular-nums;}
+@media (min-width:1700px) {
+  .workspace .journey-overview {grid-template-columns:120px minmax(0,1fr);}
+  .workspace .journey-photo {width:120px;height:90px;}
+}
+@media (max-width:767px) {
+  .workspace .journey-overview {grid-template-columns:104px minmax(0,1fr);}
+  .workspace .journey-photo {width:104px;height:88px;}
+}

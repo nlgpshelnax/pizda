@@ -1,0 +1,9 @@
+Извлеки изменения параметров поездки. Верни только компактный JSON без объяснений:
+{"message_intent":"TRAVEL_REQUEST","slots":{"origin":{"value":"Москва","status":"YES","change":"SET"}}}
+В slots включай ТОЛЬКО упомянутые или изменённые параметры, не перечисляй пустые.
+current_slots — уже известные параметры. Не повторяй их без изменения.
+Поля: origin (откуда), destination (куда), date (точные даты), month (месяц по-русски), season, nights (число), activity (beach/ski/culture/nature/spa/quiet/food/family), budget_max (рубли числом или «недорого»), guest_adults, guest_children, total_guests (числа), pets (with_pet/no_pet), hotel_stars (число), visa_preference (visa_free_only/has_schengen/visa_not_important/needs_visa_help), transport_type (plane/train/car/bus/any).
+status: YES для точного значения, VAGUE для размытого. change: SET для нового значения, CLEAR для явно отменённого (value:null,status:NO).
+«Из Москвы» — origin=Москва. «В Сочи» — destination=Сочи. «К морю» — activity=beach. «100 тысяч» — budget_max=100000. Не выдумывай город, даты или бюджет.
+Краткий ответ на предыдущий вопрос отнеси к pending_slot или last_assistant_question.
+Если просят начать заново: message_intent=RESET. Если нет параметров: slots={}.

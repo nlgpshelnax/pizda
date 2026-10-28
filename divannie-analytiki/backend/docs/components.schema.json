@@ -1,0 +1,766 @@
+{
+  "$defs": {
+    "Connection": {
+      "properties": {
+        "origin": {
+          "title": "Origin",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        },
+        "duration_minutes": {
+          "exclusiveMinimum": 0,
+          "title": "Duration Minutes",
+          "type": "integer"
+        },
+        "confirmed": {
+          "default": false,
+          "title": "Confirmed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "origin",
+        "destination",
+        "duration_minutes"
+      ],
+      "title": "Connection",
+      "type": "object"
+    },
+    "Guests": {
+      "properties": {
+        "adults": {
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Adults",
+          "type": "integer"
+        },
+        "children_ages": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 10,
+          "title": "Children Ages",
+          "type": "array"
+        },
+        "pets": {
+          "default": 0,
+          "maximum": 5,
+          "minimum": 0,
+          "title": "Pets",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "adults"
+      ],
+      "title": "Guests",
+      "type": "object"
+    },
+    "HotelProperty": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "city": {
+          "title": "City",
+          "type": "string"
+        },
+        "timezone": {
+          "title": "Timezone",
+          "type": "string"
+        },
+        "stars": {
+          "maximum": 5,
+          "minimum": 0,
+          "title": "Stars",
+          "type": "integer"
+        },
+        "rating": {
+          "maximum": 10,
+          "minimum": 0,
+          "title": "Rating",
+          "type": "number"
+        },
+        "review_count": {
+          "minimum": 0,
+          "title": "Review Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "city",
+        "timezone",
+        "stars",
+        "rating",
+        "review_count"
+      ],
+      "title": "HotelProperty",
+      "type": "object"
+    },
+    "HotelQuote": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "property_id": {
+          "title": "Property Id",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/TripRequest"
+        },
+        "check_in_at": {
+          "format": "date-time",
+          "title": "Check In At",
+          "type": "string"
+        },
+        "check_out_at": {
+          "format": "date-time",
+          "title": "Check Out At",
+          "type": "string"
+        },
+        "latest_check_in_at": {
+          "format": "date-time",
+          "title": "Latest Check In At",
+          "type": "string"
+        },
+        "breakfast": {
+          "title": "Breakfast",
+          "type": "boolean"
+        },
+        "pets_allowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Pets Allowed"
+        },
+        "max_guests": {
+          "minimum": 1,
+          "title": "Max Guests",
+          "type": "integer"
+        },
+        "children_allowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Children Allowed"
+        },
+        "early_check_in_confirmed": {
+          "default": false,
+          "title": "Early Check In Confirmed",
+          "type": "boolean"
+        },
+        "price": {
+          "$ref": "#/$defs/Money"
+        },
+        "price_basis": {
+          "const": "stay_all_guests",
+          "default": "stay_all_guests",
+          "title": "Price Basis",
+          "type": "string"
+        },
+        "mandatory_fees_known": {
+          "title": "Mandatory Fees Known",
+          "type": "boolean"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        }
+      },
+      "required": [
+        "id",
+        "property_id",
+        "scope",
+        "check_in_at",
+        "check_out_at",
+        "latest_check_in_at",
+        "breakfast",
+        "pets_allowed",
+        "max_guests",
+        "children_allowed",
+        "price",
+        "mandatory_fees_known",
+        "provenance"
+      ],
+      "title": "HotelQuote",
+      "type": "object"
+    },
+    "Money": {
+      "properties": {
+        "amount": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Amount"
+        },
+        "currency": {
+          "const": "RUB",
+          "default": "RUB",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount"
+      ],
+      "title": "Money",
+      "type": "object"
+    },
+    "Provenance": {
+      "properties": {
+        "provider": {
+          "title": "Provider",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "live",
+            "snapshot",
+            "mock"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "fetched_at": {
+          "format": "date-time",
+          "title": "Fetched At",
+          "type": "string"
+        },
+        "valid_until": {
+          "format": "date-time",
+          "title": "Valid Until",
+          "type": "string"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        }
+      },
+      "required": [
+        "provider",
+        "kind",
+        "fetched_at",
+        "valid_until"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Segment": {
+      "properties": {
+        "origin": {
+          "title": "Origin",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        },
+        "departure_at": {
+          "format": "date-time",
+          "title": "Departure At",
+          "type": "string"
+        },
+        "arrival_at": {
+          "format": "date-time",
+          "title": "Arrival At",
+          "type": "string"
+        },
+        "departure_timezone": {
+          "title": "Departure Timezone",
+          "type": "string"
+        },
+        "arrival_timezone": {
+          "title": "Arrival Timezone",
+          "type": "string"
+        },
+        "carrier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Carrier"
+        }
+      },
+      "required": [
+        "origin",
+        "destination",
+        "departure_at",
+        "arrival_at",
+        "departure_timezone",
+        "arrival_timezone"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "Transfer": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Origin"
+        },
+        "destination": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Destination"
+        },
+        "available_from": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Available From"
+        },
+        "available_until": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Available Until"
+        },
+        "child_seats": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Child Seats"
+        },
+        "duration_minutes": {
+          "exclusiveMinimum": 0,
+          "title": "Duration Minutes",
+          "type": "integer"
+        },
+        "capacity": {
+          "exclusiveMinimum": 0,
+          "title": "Capacity",
+          "type": "integer"
+        },
+        "pets_allowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Pets Allowed"
+        },
+        "price_basis": {
+          "const": "vehicle_one_way",
+          "default": "vehicle_one_way",
+          "title": "Price Basis",
+          "type": "string"
+        },
+        "provenance": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Provenance"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "price": {
+          "$ref": "#/$defs/Money"
+        }
+      },
+      "required": [
+        "id",
+        "duration_minutes",
+        "capacity",
+        "pets_allowed",
+        "price"
+      ],
+      "title": "Transfer",
+      "type": "object"
+    },
+    "TransferQuote": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/TripRequest"
+        },
+        "direction": {
+          "enum": [
+            "outbound",
+            "inbound"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "hotel_property_id": {
+          "title": "Hotel Property Id",
+          "type": "string"
+        },
+        "transfer": {
+          "$ref": "#/$defs/Transfer"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        }
+      },
+      "required": [
+        "id",
+        "scope",
+        "direction",
+        "hotel_property_id",
+        "transfer",
+        "provenance"
+      ],
+      "title": "TransferQuote",
+      "type": "object"
+    },
+    "Transport": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "flight",
+            "train"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "origin": {
+          "title": "Origin",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        },
+        "departure_at": {
+          "format": "date-time",
+          "title": "Departure At",
+          "type": "string"
+        },
+        "arrival_at": {
+          "format": "date-time",
+          "title": "Arrival At",
+          "type": "string"
+        },
+        "international": {
+          "default": false,
+          "title": "International",
+          "type": "boolean"
+        },
+        "departure_location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Departure Location"
+        },
+        "arrival_location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Arrival Location"
+        },
+        "segments": {
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "title": "Segments",
+          "type": "array"
+        },
+        "connections": {
+          "items": {
+            "$ref": "#/$defs/Connection"
+          },
+          "title": "Connections",
+          "type": "array"
+        },
+        "arrival_buffer_minutes": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Arrival Buffer Minutes"
+        },
+        "departure_buffer_minutes": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Departure Buffer Minutes"
+        },
+        "price_basis": {
+          "const": "leg_all_guests",
+          "default": "leg_all_guests",
+          "title": "Price Basis",
+          "type": "string"
+        },
+        "provenance": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Provenance"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "price": {
+          "$ref": "#/$defs/Money"
+        }
+      },
+      "required": [
+        "id",
+        "mode",
+        "origin",
+        "destination",
+        "departure_at",
+        "arrival_at",
+        "price"
+      ],
+      "title": "Transport",
+      "type": "object"
+    },
+    "TransportQuote": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/TripRequest"
+        },
+        "direction": {
+          "enum": [
+            "outbound",
+            "inbound"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "transport": {
+          "$ref": "#/$defs/Transport"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        }
+      },
+      "required": [
+        "id",
+        "scope",
+        "direction",
+        "transport",
+        "provenance"
+      ],
+      "title": "TransportQuote",
+      "type": "object"
+    },
+    "TripRequest": {
+      "properties": {
+        "origin": {
+          "title": "Origin",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        },
+        "check_in": {
+          "format": "date",
+          "title": "Check In",
+          "type": "string"
+        },
+        "check_out": {
+          "format": "date",
+          "title": "Check Out",
+          "type": "string"
+        },
+        "guests": {
+          "$ref": "#/$defs/Guests"
+        },
+        "budget": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Money"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "breakfast_required": {
+          "default": false,
+          "title": "Breakfast Required",
+          "type": "boolean"
+        },
+        "min_stars": {
+          "default": 0,
+          "maximum": 5,
+          "minimum": 0,
+          "title": "Min Stars",
+          "type": "integer"
+        },
+        "child_seats_required": {
+          "default": 0,
+          "maximum": 10,
+          "minimum": 0,
+          "title": "Child Seats Required",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "origin",
+        "destination",
+        "check_in",
+        "check_out",
+        "guests"
+      ],
+      "title": "TripRequest",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "properties": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/HotelProperty"
+      },
+      "title": "Properties"
+    },
+    "hotels": {
+      "items": {
+        "$ref": "#/$defs/HotelQuote"
+      },
+      "title": "Hotels",
+      "type": "array"
+    },
+    "transport": {
+      "items": {
+        "$ref": "#/$defs/TransportQuote"
+      },
+      "title": "Transport",
+      "type": "array"
+    },
+    "transfers": {
+      "items": {
+        "$ref": "#/$defs/TransferQuote"
+      },
+      "title": "Transfers",
+      "type": "array"
+    }
+  },
+  "required": [
+    "properties",
+    "hotels",
+    "transport",
+    "transfers"
+  ],
+  "title": "ComponentCatalog",
+  "type": "object"
+}

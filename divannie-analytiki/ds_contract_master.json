@@ -1,0 +1,3602 @@
+{
+  "smoothing_meta": {
+    "method": "bayesian_smoothing",
+    "m_weight": 5,
+    "description": "Итоговое значение = (n * городское_значение + 5 * страновое_значение) / (n + 5)"
+  },
+  "vibe_thresholds": {
+    "warm_air": 15,
+    "swim_sea": 20,
+    "ski_snow": 15
+  },
+  "cities": {
+    "AER": {
+      "name_ru": "Сочи",
+      "country": "Россия",
+      "hotel_count": 28,
+      "budget": {
+        "median": 13951.52,
+        "p25": 11006.06,
+        "p75": 16700.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 35.7
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -2.0,
+          "sea_temp": 10.0,
+          "snow_depth": 35.1
+        },
+        "2": {
+          "avg_temp": -1.3,
+          "sea_temp": 10.0,
+          "snow_depth": 36.7
+        },
+        "3": {
+          "avg_temp": 2.9,
+          "sea_temp": 11.0,
+          "snow_depth": 22.1
+        },
+        "4": {
+          "avg_temp": 8.9,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.1,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 19.1,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.8,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.5,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.0,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 10.1,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.8,
+          "sea_temp": 16.0,
+          "snow_depth": 2.2
+        },
+        "12": {
+          "avg_temp": 0.1,
+          "sea_temp": 12.0,
+          "snow_depth": 28.1
+        }
+      }
+    },
+    "AGP": {
+      "name_ru": "Малага",
+      "country": "Испания",
+      "hotel_count": 27,
+      "budget": {
+        "median": 14540.62,
+        "p25": 11910.94,
+        "p75": 17610.94
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 37.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 7.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 8.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 13.3,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 17.0,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 21.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 24.3,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 24.5,
+          "sea_temp": 24.5,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 20.9,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 16.2,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 11.2,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 8.4,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "ANC": {
+      "name_ru": "Анси",
+      "country": "Франция",
+      "hotel_count": 2,
+      "budget": {
+        "median": 15092.86,
+        "p25": 11600.0,
+        "p75": 17250.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 100.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.3,
+          "sea_temp": 13.0,
+          "snow_depth": 93.2
+        },
+        "2": {
+          "avg_temp": 4.6,
+          "sea_temp": 13.0,
+          "snow_depth": 97.5
+        },
+        "3": {
+          "avg_temp": 7.8,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.2,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 20.6,
+          "sea_temp": 23.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.4,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.3,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.4,
+          "sea_temp": 17.0,
+          "snow_depth": 4.2
+        },
+        "12": {
+          "avg_temp": 4.3,
+          "sea_temp": 14.0,
+          "snow_depth": 68.4
+        }
+      }
+    },
+    "AND": {
+      "name_ru": "Андорра-ла-Велья",
+      "country": "Андорра",
+      "hotel_count": 27,
+      "budget": {
+        "median": 17562.5,
+        "p25": 14000.0,
+        "p75": 20800.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 63.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -1.1,
+          "sea_temp": null,
+          "snow_depth": 103.8
+        },
+        "2": {
+          "avg_temp": 0.8,
+          "sea_temp": null,
+          "snow_depth": 85.7
+        },
+        "3": {
+          "avg_temp": 4.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 8.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 17.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 19.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.2,
+          "sea_temp": null,
+          "snow_depth": 0.7
+        },
+        "12": {
+          "avg_temp": 0.2,
+          "sea_temp": null,
+          "snow_depth": 63.2
+        }
+      }
+    },
+    "BAD": {
+      "name_ru": "Баден-Баден",
+      "country": "Германия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 13929.69,
+        "p25": 11110.94,
+        "p75": 17192.19
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 51.9
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 39.0
+        },
+        "2": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 32.1
+        },
+        "3": {
+          "avg_temp": 4.3,
+          "sea_temp": null,
+          "snow_depth": 38.9
+        },
+        "4": {
+          "avg_temp": 8.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.1,
+          "sea_temp": null,
+          "snow_depth": 6.2
+        },
+        "12": {
+          "avg_temp": 0.3,
+          "sea_temp": null,
+          "snow_depth": 22.8
+        }
+      }
+    },
+    "BCN": {
+      "name_ru": "Барселона",
+      "country": "Испания",
+      "hotel_count": 28,
+      "budget": {
+        "median": 14027.27,
+        "p25": 11212.12,
+        "p75": 16233.33
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 46.4
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 7.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 8.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 13.3,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 17.0,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 21.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 24.3,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 24.5,
+          "sea_temp": 24.5,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 20.9,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 16.2,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 11.2,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 8.4,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "BEG": {
+      "name_ru": "Белград",
+      "country": "Сербия",
+      "hotel_count": 28,
+      "budget": {
+        "median": 11854.55,
+        "p25": 9581.82,
+        "p75": 13942.42
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 39.3
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.5,
+          "sea_temp": null,
+          "snow_depth": 90.2
+        },
+        "2": {
+          "avg_temp": 1.0,
+          "sea_temp": null,
+          "snow_depth": 94.1
+        },
+        "3": {
+          "avg_temp": 5.9,
+          "sea_temp": null,
+          "snow_depth": 25.2
+        },
+        "4": {
+          "avg_temp": 10.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 11.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 5.1,
+          "sea_temp": null,
+          "snow_depth": 4.9
+        },
+        "12": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 60.0
+        }
+      }
+    },
+    "BER": {
+      "name_ru": "Берлин",
+      "country": "Германия",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12469.12,
+        "p25": 9876.47,
+        "p75": 15742.65
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 37.9
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 39.0
+        },
+        "2": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 32.1
+        },
+        "3": {
+          "avg_temp": 4.3,
+          "sea_temp": null,
+          "snow_depth": 38.9
+        },
+        "4": {
+          "avg_temp": 8.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.1,
+          "sea_temp": null,
+          "snow_depth": 6.2
+        },
+        "12": {
+          "avg_temp": 0.3,
+          "sea_temp": null,
+          "snow_depth": 22.8
+        }
+      }
+    },
+    "BGS": {
+      "name_ru": "Бад-Гастайн",
+      "country": "Австрия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 14529.69,
+        "p25": 11900.78,
+        "p75": 17786.72
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 25.9
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -1.5,
+          "sea_temp": null,
+          "snow_depth": 69.7
+        },
+        "2": {
+          "avg_temp": 0.2,
+          "sea_temp": null,
+          "snow_depth": 64.4
+        },
+        "3": {
+          "avg_temp": 4.2,
+          "sea_temp": null,
+          "snow_depth": 42.0
+        },
+        "4": {
+          "avg_temp": 8.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 13.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 8.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.1,
+          "sea_temp": null,
+          "snow_depth": 5.1
+        },
+        "12": {
+          "avg_temp": -0.5,
+          "sea_temp": null,
+          "snow_depth": 44.0
+        }
+      }
+    },
+    "BOL": {
+      "name_ru": "Больцано",
+      "country": "Италия",
+      "hotel_count": 2,
+      "budget": {
+        "median": 14114.29,
+        "p25": 10900.0,
+        "p75": 16200.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 100.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "BRG": {
+      "name_ru": "Бад-Рагац",
+      "country": "Швейцария",
+      "hotel_count": 8,
+      "budget": {
+        "median": 15415.38,
+        "p25": 13269.23,
+        "p75": 17638.46
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 12.5
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 96.0
+        },
+        "2": {
+          "avg_temp": 0.4,
+          "sea_temp": null,
+          "snow_depth": 91.1
+        },
+        "3": {
+          "avg_temp": 4.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 8.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 17.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 0.5,
+          "sea_temp": null,
+          "snow_depth": 58.0
+        }
+      }
+    },
+    "BUD": {
+      "name_ru": "Будапешт",
+      "country": "Венгрия",
+      "hotel_count": 3,
+      "budget": {
+        "median": 16737.5,
+        "p25": 15950.0,
+        "p75": 19000.0
+      },
+      "stars": {
+        "median": 5
+      },
+      "pets": {
+        "allowed_pct": 33.3
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 0.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 2.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 7.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 12.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 17.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 6.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 2.0,
+          "sea_temp": null,
+          "snow_depth": null
+        }
+      }
+    },
+    "CDG": {
+      "name_ru": "Париж",
+      "country": "Франция",
+      "hotel_count": 30,
+      "budget": {
+        "median": 12415.71,
+        "p25": 10207.14,
+        "p75": 15064.29
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 33.3
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.3,
+          "sea_temp": 13.0,
+          "snow_depth": 93.2
+        },
+        "2": {
+          "avg_temp": 4.6,
+          "sea_temp": 13.0,
+          "snow_depth": 97.5
+        },
+        "3": {
+          "avg_temp": 7.8,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.2,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 20.6,
+          "sea_temp": 23.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.4,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.3,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.4,
+          "sea_temp": 17.0,
+          "snow_depth": 4.2
+        },
+        "12": {
+          "avg_temp": 4.3,
+          "sea_temp": 14.0,
+          "snow_depth": 68.4
+        }
+      }
+    },
+    "CHQ": {
+      "name_ru": "Ханья",
+      "country": "Греция",
+      "hotel_count": 27,
+      "budget": {
+        "median": 14387.5,
+        "p25": 9600.0,
+        "p75": 17400.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 40.7
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 11.9,
+          "sea_temp": 16.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 12.1,
+          "sea_temp": 16.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 13.8,
+          "sea_temp": 16.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 16.5,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 20.5,
+          "sea_temp": 19.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 24.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 26.2,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 26.4,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 23.4,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 19.4,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 16.0,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 12.9,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "CMF": {
+      "name_ru": "Шамони-Монблан",
+      "country": "Франция",
+      "hotel_count": 27,
+      "budget": {
+        "median": 16848.44,
+        "p25": 14004.69,
+        "p75": 19528.12
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 37.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.3,
+          "sea_temp": 13.0,
+          "snow_depth": 93.2
+        },
+        "2": {
+          "avg_temp": 4.6,
+          "sea_temp": 13.0,
+          "snow_depth": 97.5
+        },
+        "3": {
+          "avg_temp": 7.8,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.2,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 20.6,
+          "sea_temp": 23.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.4,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.3,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.4,
+          "sea_temp": 17.0,
+          "snow_depth": 4.2
+        },
+        "12": {
+          "avg_temp": 4.3,
+          "sea_temp": 14.0,
+          "snow_depth": 68.4
+        }
+      }
+    },
+    "CORT": {
+      "name_ru": "Кортина-д’Ампеццо",
+      "country": "Италия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 16800.0,
+        "p25": 13220.31,
+        "p75": 19954.69
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 22.2
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "FAO": {
+      "name_ru": "Фару",
+      "country": "Португалия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 13934.38,
+        "p25": 10700.0,
+        "p75": 16700.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 51.9
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 12.3,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 12.6,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 14.5,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 16.2,
+          "sea_temp": 16.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 18.8,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 22.1,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 24.3,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 23.8,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 21.8,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 18.4,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 15.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 12.7,
+          "sea_temp": 16.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "FCO": {
+      "name_ru": "Рим",
+      "country": "Италия",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12311.76,
+        "p25": 10302.94,
+        "p75": 14579.41
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 27.6
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "FLR": {
+      "name_ru": "Флоренция",
+      "country": "Италия",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12611.76,
+        "p25": 10729.41,
+        "p75": 14920.59
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 27.6
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "GPI": {
+      "name_ru": "Гармиш-Партенкирхен",
+      "country": "Германия",
+      "hotel_count": 26,
+      "budget": {
+        "median": 16182.26,
+        "p25": 13227.42,
+        "p75": 19645.16
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 38.5
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 39.0
+        },
+        "2": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 32.1
+        },
+        "3": {
+          "avg_temp": 4.3,
+          "sea_temp": null,
+          "snow_depth": 38.9
+        },
+        "4": {
+          "avg_temp": 8.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.1,
+          "sea_temp": null,
+          "snow_depth": 6.2
+        },
+        "12": {
+          "avg_temp": 0.3,
+          "sea_temp": null,
+          "snow_depth": 22.8
+        }
+      }
+    },
+    "GRX": {
+      "name_ru": "Сьерра-Невада",
+      "country": "Испания",
+      "hotel_count": 27,
+      "budget": {
+        "median": 17443.75,
+        "p25": 14610.94,
+        "p75": 19551.56
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 25.9
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 7.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 8.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 13.3,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 17.0,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 21.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 24.3,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 24.5,
+          "sea_temp": 24.5,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 20.9,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 16.2,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 11.2,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 8.4,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "INN": {
+      "name_ru": "Инсбрук",
+      "country": "Австрия",
+      "hotel_count": 26,
+      "budget": {
+        "median": 17627.42,
+        "p25": 14921.77,
+        "p75": 20739.52
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 50.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -1.5,
+          "sea_temp": null,
+          "snow_depth": 69.7
+        },
+        "2": {
+          "avg_temp": 0.2,
+          "sea_temp": null,
+          "snow_depth": 64.4
+        },
+        "3": {
+          "avg_temp": 4.2,
+          "sea_temp": null,
+          "snow_depth": 42.0
+        },
+        "4": {
+          "avg_temp": 8.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 13.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 8.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.1,
+          "sea_temp": null,
+          "snow_depth": 5.1
+        },
+        "12": {
+          "avg_temp": -0.5,
+          "sea_temp": null,
+          "snow_depth": 44.0
+        }
+      }
+    },
+    "INT": {
+      "name_ru": "Интерлакен",
+      "country": "Швейцария",
+      "hotel_count": 2,
+      "budget": {
+        "median": 16785.71,
+        "p25": 14700.0,
+        "p75": 19100.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 50.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 96.0
+        },
+        "2": {
+          "avg_temp": 0.4,
+          "sea_temp": null,
+          "snow_depth": 91.1
+        },
+        "3": {
+          "avg_temp": 4.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 8.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 17.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 0.5,
+          "sea_temp": null,
+          "snow_depth": 58.0
+        }
+      }
+    },
+    "JAH": {
+      "name_ru": "Яхорина",
+      "country": "Босния",
+      "hotel_count": 27,
+      "budget": {
+        "median": 17078.12,
+        "p25": 14712.5,
+        "p75": 19445.31
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 29.6
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.6,
+          "sea_temp": null,
+          "snow_depth": 101.6
+        },
+        "2": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 88.2
+        },
+        "3": {
+          "avg_temp": 5.2,
+          "sea_temp": null,
+          "snow_depth": 14.7
+        },
+        "4": {
+          "avg_temp": 9.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 14.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 17.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 19.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 19.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 15.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 10.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.4,
+          "sea_temp": null,
+          "snow_depth": 3.4
+        },
+        "12": {
+          "avg_temp": 0.5,
+          "sea_temp": null,
+          "snow_depth": 64.2
+        }
+      }
+    },
+    "KLV": {
+      "name_ru": "Карловы Вары",
+      "country": "Чехия",
+      "hotel_count": 2,
+      "budget": {
+        "median": 13414.29,
+        "p25": 10650.0,
+        "p75": 14350.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 100.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -1.3,
+          "sea_temp": null,
+          "snow_depth": 17.6
+        },
+        "2": {
+          "avg_temp": 0.2,
+          "sea_temp": null,
+          "snow_depth": 16.0
+        },
+        "3": {
+          "avg_temp": 3.8,
+          "sea_temp": null,
+          "snow_depth": 3.0
+        },
+        "4": {
+          "avg_temp": 8.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 8.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.4,
+          "sea_temp": null,
+          "snow_depth": 0.5
+        },
+        "12": {
+          "avg_temp": -0.2,
+          "sea_temp": null,
+          "snow_depth": 11.9
+        }
+      }
+    },
+    "KOP": {
+      "name_ru": "Копаоник",
+      "country": "Сербия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 16903.12,
+        "p25": 14439.06,
+        "p75": 19678.12
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 40.7
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.5,
+          "sea_temp": null,
+          "snow_depth": 90.2
+        },
+        "2": {
+          "avg_temp": 1.0,
+          "sea_temp": null,
+          "snow_depth": 94.1
+        },
+        "3": {
+          "avg_temp": 5.9,
+          "sea_temp": null,
+          "snow_depth": 25.2
+        },
+        "4": {
+          "avg_temp": 10.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 11.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 5.1,
+          "sea_temp": null,
+          "snow_depth": 4.9
+        },
+        "12": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 60.0
+        }
+      }
+    },
+    "KZN": {
+      "name_ru": "Казань",
+      "country": "Россия",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12041.18,
+        "p25": 10114.71,
+        "p75": 14294.12
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 55.2
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -2.0,
+          "sea_temp": 10.0,
+          "snow_depth": 35.1
+        },
+        "2": {
+          "avg_temp": -1.3,
+          "sea_temp": 10.0,
+          "snow_depth": 36.7
+        },
+        "3": {
+          "avg_temp": 2.9,
+          "sea_temp": 11.0,
+          "snow_depth": 22.1
+        },
+        "4": {
+          "avg_temp": 8.9,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.1,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 19.1,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.8,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.5,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.0,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 10.1,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.8,
+          "sea_temp": 16.0,
+          "snow_depth": 2.2
+        },
+        "12": {
+          "avg_temp": 0.1,
+          "sea_temp": 12.0,
+          "snow_depth": 28.1
+        }
+      }
+    },
+    "LON": {
+      "name_ru": "Лондон",
+      "country": "Великобритания",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12288.24,
+        "p25": 9473.53,
+        "p75": 14614.71
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 34.5
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 4.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 7.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 9.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 15.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 17.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 11.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 5.2,
+          "sea_temp": null,
+          "snow_depth": null
+        }
+      }
+    },
+    "MAD": {
+      "name_ru": "Мадрид",
+      "country": "Испания",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12152.94,
+        "p25": 8714.71,
+        "p75": 14926.47
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 55.2
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 7.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 8.8,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 13.3,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 17.0,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 21.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 24.3,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 24.5,
+          "sea_temp": 24.5,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 20.9,
+          "sea_temp": 23.5,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 16.2,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 11.2,
+          "sea_temp": 17.5,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 8.4,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "MCM": {
+      "name_ru": "Монте-Карло",
+      "country": "Монако",
+      "hotel_count": 28,
+      "budget": {
+        "median": 15209.09,
+        "p25": 12975.0,
+        "p75": 17800.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 35.7
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 9.6,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 10.0,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 12.0,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 14.7,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 17.8,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 21.5,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 23.9,
+          "sea_temp": 23.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 24.2,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 21.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 16.8,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 13.1,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 10.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        }
+      }
+    },
+    "MIL": {
+      "name_ru": "Милан",
+      "country": "Италия",
+      "hotel_count": 28,
+      "budget": {
+        "median": 12457.58,
+        "p25": 10539.39,
+        "p75": 15054.55
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 42.9
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "MTC": {
+      "name_ru": "Монтекатини-Терме",
+      "country": "Италия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 15087.5,
+        "p25": 11532.81,
+        "p75": 18225.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 55.6
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "MUC": {
+      "name_ru": "Мюнхен",
+      "country": "Германия",
+      "hotel_count": 4,
+      "budget": {
+        "median": 14361.11,
+        "p25": 11322.22,
+        "p75": 17450.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 25.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 39.0
+        },
+        "2": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 32.1
+        },
+        "3": {
+          "avg_temp": 4.3,
+          "sea_temp": null,
+          "snow_depth": 38.9
+        },
+        "4": {
+          "avg_temp": 8.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.1,
+          "sea_temp": null,
+          "snow_depth": 6.2
+        },
+        "12": {
+          "avg_temp": 0.3,
+          "sea_temp": null,
+          "snow_depth": 22.8
+        }
+      }
+    },
+    "NCE": {
+      "name_ru": "Ницца",
+      "country": "Франция",
+      "hotel_count": 28,
+      "budget": {
+        "median": 13704.55,
+        "p25": 11600.0,
+        "p75": 15786.36
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 32.1
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.3,
+          "sea_temp": 13.0,
+          "snow_depth": 93.2
+        },
+        "2": {
+          "avg_temp": 4.6,
+          "sea_temp": 13.0,
+          "snow_depth": 97.5
+        },
+        "3": {
+          "avg_temp": 7.8,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.2,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 20.6,
+          "sea_temp": 23.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.4,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.3,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.4,
+          "sea_temp": 17.0,
+          "snow_depth": 4.2
+        },
+        "12": {
+          "avg_temp": 4.3,
+          "sea_temp": 14.0,
+          "snow_depth": 68.4
+        }
+      }
+    },
+    "OSL": {
+      "name_ru": "Осло",
+      "country": "Норвегия",
+      "hotel_count": 2,
+      "budget": {
+        "median": 16000.0,
+        "p25": 14550.0,
+        "p75": 17450.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 50.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -4.0,
+          "sea_temp": null,
+          "snow_depth": 34.5
+        },
+        "2": {
+          "avg_temp": -3.1,
+          "sea_temp": null,
+          "snow_depth": 35.5
+        },
+        "3": {
+          "avg_temp": -0.1,
+          "sea_temp": null,
+          "snow_depth": 22.4
+        },
+        "4": {
+          "avg_temp": 4.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 10.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 14.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 16.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 15.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 11.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 6.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 1.1,
+          "sea_temp": null,
+          "snow_depth": 1.8
+        },
+        "12": {
+          "avg_temp": -2.7,
+          "sea_temp": null,
+          "snow_depth": 23.2
+        }
+      }
+    },
+    "PMO": {
+      "name_ru": "Палермо",
+      "country": "Италия",
+      "hotel_count": 27,
+      "budget": {
+        "median": 13987.5,
+        "p25": 11870.31,
+        "p75": 16410.94
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 44.4
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.6,
+          "sea_temp": 14.0,
+          "snow_depth": 104.5
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": 14.0,
+          "snow_depth": 89.1
+        },
+        "3": {
+          "avg_temp": 8.2,
+          "sea_temp": 14.0,
+          "snow_depth": 21.9
+        },
+        "4": {
+          "avg_temp": 11.9,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.2,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 20.0,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 22.5,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.2,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.6,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.2,
+          "sea_temp": 19.0,
+          "snow_depth": 8.9
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": 16.0,
+          "snow_depth": 59.4
+        }
+      }
+    },
+    "PRG": {
+      "name_ru": "Прага",
+      "country": "Чехия",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12176.47,
+        "p25": 10436.76,
+        "p75": 13966.18
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 41.4
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -1.3,
+          "sea_temp": null,
+          "snow_depth": 17.6
+        },
+        "2": {
+          "avg_temp": 0.2,
+          "sea_temp": null,
+          "snow_depth": 16.0
+        },
+        "3": {
+          "avg_temp": 3.8,
+          "sea_temp": null,
+          "snow_depth": 3.0
+        },
+        "4": {
+          "avg_temp": 8.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 8.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.4,
+          "sea_temp": null,
+          "snow_depth": 0.5
+        },
+        "12": {
+          "avg_temp": -0.2,
+          "sea_temp": null,
+          "snow_depth": 11.9
+        }
+      }
+    },
+    "SJJ": {
+      "name_ru": "Сараево",
+      "country": "Босния",
+      "hotel_count": 28,
+      "budget": {
+        "median": 11781.82,
+        "p25": 9324.24,
+        "p75": 14745.45
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 25.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.6,
+          "sea_temp": null,
+          "snow_depth": 101.6
+        },
+        "2": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 88.2
+        },
+        "3": {
+          "avg_temp": 5.2,
+          "sea_temp": null,
+          "snow_depth": 14.7
+        },
+        "4": {
+          "avg_temp": 9.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 14.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 17.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 19.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 19.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 15.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 10.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 4.4,
+          "sea_temp": null,
+          "snow_depth": 3.4
+        },
+        "12": {
+          "avg_temp": 0.5,
+          "sea_temp": null,
+          "snow_depth": 64.2
+        }
+      }
+    },
+    "SMA": {
+      "name_ru": "Сан-Марино",
+      "country": "Сан-Марино",
+      "hotel_count": 2,
+      "budget": {
+        "median": 13200.0,
+        "p25": 11150.0,
+        "p75": 15250.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 50.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 4.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 8.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 12.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 16.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 21.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 23.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 22.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 18.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 13.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 8.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 4.5,
+          "sea_temp": null,
+          "snow_depth": null
+        }
+      }
+    },
+    "TIV": {
+      "name_ru": "Будва",
+      "country": "Черногория",
+      "hotel_count": 27,
+      "budget": {
+        "median": 14193.75,
+        "p25": 11725.0,
+        "p75": 17315.62
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 29.6
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.0,
+          "sea_temp": 14.0,
+          "snow_depth": 101.7
+        },
+        "2": {
+          "avg_temp": 3.4,
+          "sea_temp": 14.0,
+          "snow_depth": 91.3
+        },
+        "3": {
+          "avg_temp": 6.9,
+          "sea_temp": 14.0,
+          "snow_depth": 21.4
+        },
+        "4": {
+          "avg_temp": 10.8,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.6,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 19.1,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.4,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 21.1,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 17.2,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.5,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.6,
+          "sea_temp": 18.0,
+          "snow_depth": 6.4
+        },
+        "12": {
+          "avg_temp": 3.7,
+          "sea_temp": 15.0,
+          "snow_depth": 61.8
+        }
+      }
+    },
+    "VHY": {
+      "name_ru": "Виши",
+      "country": "Франция",
+      "hotel_count": 27,
+      "budget": {
+        "median": 14710.94,
+        "p25": 11557.81,
+        "p75": 18515.62
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 40.7
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.3,
+          "sea_temp": 13.0,
+          "snow_depth": 93.2
+        },
+        "2": {
+          "avg_temp": 4.6,
+          "sea_temp": 13.0,
+          "snow_depth": 97.5
+        },
+        "3": {
+          "avg_temp": 7.8,
+          "sea_temp": 13.0,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 11.1,
+          "sea_temp": 14.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.2,
+          "sea_temp": 17.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.4,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 20.6,
+          "sea_temp": 23.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.4,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.6,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.3,
+          "sea_temp": 20.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.4,
+          "sea_temp": 17.0,
+          "snow_depth": 4.2
+        },
+        "12": {
+          "avg_temp": 4.3,
+          "sea_temp": 14.0,
+          "snow_depth": 68.4
+        }
+      }
+    },
+    "VIE": {
+      "name_ru": "Вена",
+      "country": "Австрия",
+      "hotel_count": 29,
+      "budget": {
+        "median": 12516.18,
+        "p25": 10149.26,
+        "p75": 15149.26
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 55.2
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -1.5,
+          "sea_temp": null,
+          "snow_depth": 69.7
+        },
+        "2": {
+          "avg_temp": 0.2,
+          "sea_temp": null,
+          "snow_depth": 64.4
+        },
+        "3": {
+          "avg_temp": 4.2,
+          "sea_temp": null,
+          "snow_depth": 42.0
+        },
+        "4": {
+          "avg_temp": 8.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 18.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 13.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 8.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.1,
+          "sea_temp": null,
+          "snow_depth": 5.1
+        },
+        "12": {
+          "avg_temp": -0.5,
+          "sea_temp": null,
+          "snow_depth": 44.0
+        }
+      }
+    },
+    "VRN": {
+      "name_ru": "Врнячка-Баня",
+      "country": "Сербия",
+      "hotel_count": 2,
+      "budget": {
+        "median": 14800.0,
+        "p25": 10600.0,
+        "p75": 17400.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 0.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.5,
+          "sea_temp": null,
+          "snow_depth": 90.2
+        },
+        "2": {
+          "avg_temp": 1.0,
+          "sea_temp": null,
+          "snow_depth": 94.1
+        },
+        "3": {
+          "avg_temp": 5.9,
+          "sea_temp": null,
+          "snow_depth": 25.2
+        },
+        "4": {
+          "avg_temp": 10.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 18.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 20.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 16.3,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 11.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 5.1,
+          "sea_temp": null,
+          "snow_depth": 4.9
+        },
+        "12": {
+          "avg_temp": 0.7,
+          "sea_temp": null,
+          "snow_depth": 60.0
+        }
+      }
+    },
+    "WND": {
+      "name_ru": "Уиндермир",
+      "country": "Великобритания",
+      "hotel_count": 2,
+      "budget": {
+        "median": 14300.0,
+        "p25": 9900.0,
+        "p75": 14700.0
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 0.0
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 4.6,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "2": {
+          "avg_temp": 5.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "3": {
+          "avg_temp": 7.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 9.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 15.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 17.2,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.8,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 11.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.7,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 5.2,
+          "sea_temp": null,
+          "snow_depth": null
+        }
+      }
+    },
+    "ZBL": {
+      "name_ru": "Жабляк",
+      "country": "Черногория",
+      "hotel_count": 27,
+      "budget": {
+        "median": 17312.5,
+        "p25": 14298.44,
+        "p75": 20268.75
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 44.4
+      },
+      "weather": {
+        "1": {
+          "avg_temp": 3.0,
+          "sea_temp": 14.0,
+          "snow_depth": 101.7
+        },
+        "2": {
+          "avg_temp": 3.4,
+          "sea_temp": 14.0,
+          "snow_depth": 91.3
+        },
+        "3": {
+          "avg_temp": 6.9,
+          "sea_temp": 14.0,
+          "snow_depth": 21.4
+        },
+        "4": {
+          "avg_temp": 10.8,
+          "sea_temp": 15.0,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 15.6,
+          "sea_temp": 18.0,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 19.1,
+          "sea_temp": 22.0,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 21.4,
+          "sea_temp": 25.0,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 21.1,
+          "sea_temp": 26.0,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 17.2,
+          "sea_temp": 24.0,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 12.5,
+          "sea_temp": 21.0,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 7.6,
+          "sea_temp": 18.0,
+          "snow_depth": 6.4
+        },
+        "12": {
+          "avg_temp": 3.7,
+          "sea_temp": 15.0,
+          "snow_depth": 61.8
+        }
+      }
+    },
+    "ZRH": {
+      "name_ru": "Церматт",
+      "country": "Швейцария",
+      "hotel_count": 27,
+      "budget": {
+        "median": 17115.62,
+        "p25": 14700.0,
+        "p75": 20028.12
+      },
+      "stars": {
+        "median": 4
+      },
+      "pets": {
+        "allowed_pct": 48.1
+      },
+      "weather": {
+        "1": {
+          "avg_temp": -0.7,
+          "sea_temp": null,
+          "snow_depth": 96.0
+        },
+        "2": {
+          "avg_temp": 0.4,
+          "sea_temp": null,
+          "snow_depth": 91.1
+        },
+        "3": {
+          "avg_temp": 4.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "4": {
+          "avg_temp": 8.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "5": {
+          "avg_temp": 13.1,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "6": {
+          "avg_temp": 16.4,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "7": {
+          "avg_temp": 18.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "8": {
+          "avg_temp": 17.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "9": {
+          "avg_temp": 14.0,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "10": {
+          "avg_temp": 9.5,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "11": {
+          "avg_temp": 3.9,
+          "sea_temp": null,
+          "snow_depth": null
+        },
+        "12": {
+          "avg_temp": 0.5,
+          "sea_temp": null,
+          "snow_depth": 58.0
+        }
+      }
+    }
+  }
+}

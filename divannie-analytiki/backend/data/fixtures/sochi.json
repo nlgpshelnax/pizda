@@ -1,0 +1,261 @@
+[
+  {
+    "id": "mock-sochi-001",
+    "request": {
+      "origin": "Москва",
+      "destination": "Сочи",
+      "check_in": "2026-11-10",
+      "check_out": "2026-11-15",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "100000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1",
+      "name": "Демо-отель у моря (вымышленный)",
+      "city": "Сочи",
+      "check_in_at": "2026-11-10T14:00:00+03:00",
+      "check_out_at": "2026-11-15T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-10T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "30000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true
+    },
+    "outbound": {
+      "id": "demo-flight-out",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Сочи",
+      "departure_at": "2026-11-10T09:00:00+03:00",
+      "arrival_at": "2026-11-10T12:30:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound": {
+      "id": "demo-flight-back",
+      "mode": "flight",
+      "origin": "Сочи",
+      "destination": "Москва",
+      "departure_at": "2026-11-15T14:30:00+03:00",
+      "arrival_at": "2026-11-15T18:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "transfer": {
+      "id": "demo-transfer",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    }
+  },
+  {
+    "id": "mock-sochi-002-shifted",
+    "request": {
+      "origin": "Москва",
+      "destination": "Сочи",
+      "check_in": "2026-11-12",
+      "check_out": "2026-11-17",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "100000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1-shifted",
+      "name": "Демо-отель у моря (вымышленный)",
+      "city": "Сочи",
+      "check_in_at": "2026-11-12T14:00:00+03:00",
+      "check_out_at": "2026-11-17T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-12T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "33000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true
+    },
+    "outbound": {
+      "id": "demo-flight-out-shifted",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Сочи",
+      "departure_at": "2026-11-12T09:00:00+03:00",
+      "arrival_at": "2026-11-12T12:30:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound": {
+      "id": "demo-flight-back-shifted",
+      "mode": "flight",
+      "origin": "Сочи",
+      "destination": "Москва",
+      "departure_at": "2026-11-17T14:30:00+03:00",
+      "arrival_at": "2026-11-17T18:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "outbound_transfer-shifted",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound_transfer": {
+      "id": "inbound_transfer-shifted",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    }
+  },
+  {
+    "id": "mock-sochi-003-child",
+    "request": {
+      "origin": "Москва",
+      "destination": "Сочи",
+      "check_in": "2026-11-12",
+      "check_out": "2026-11-17",
+      "guests": {
+        "adults": 2,
+        "children_ages": [
+          7
+        ],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "100000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1-shifted-child",
+      "name": "Демо-отель у моря (вымышленный)",
+      "city": "Сочи",
+      "check_in_at": "2026-11-12T14:00:00+03:00",
+      "check_out_at": "2026-11-17T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-12T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "36000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true
+    },
+    "outbound": {
+      "id": "demo-flight-out-shifted-child",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Сочи",
+      "departure_at": "2026-11-12T09:00:00+03:00",
+      "arrival_at": "2026-11-12T12:30:00+03:00",
+      "price": {
+        "amount": "25000.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound": {
+      "id": "demo-flight-back-shifted-child",
+      "mode": "flight",
+      "origin": "Сочи",
+      "destination": "Москва",
+      "departure_at": "2026-11-17T14:30:00+03:00",
+      "arrival_at": "2026-11-17T18:00:00+03:00",
+      "price": {
+        "amount": "25000.00",
+        "currency": "RUB"
+      }
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "outbound_transfer-shifted-child",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound_transfer": {
+      "id": "inbound_transfer-shifted-child",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    }
+  }
+]

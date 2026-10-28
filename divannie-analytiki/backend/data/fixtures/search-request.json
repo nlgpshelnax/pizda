@@ -1,0 +1,20 @@
+{
+  "request": {
+    "origin": "Москва",
+    "destination": "Сочи",
+    "check_in": "2026-11-10",
+    "check_out": "2026-11-15",
+    "guests": {
+      "adults": 2,
+      "children_ages": [],
+      "pets": 0
+    },
+    "budget": {
+      "amount": "100000.00",
+      "currency": "RUB"
+    },
+    "breakfast_required": true,
+    "min_stars": 3
+  },
+  "plan_version": 1
+}

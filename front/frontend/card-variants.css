@@ -1,0 +1,15 @@
+/* Preview-only layouts. The real app and data are mounted in the frame. */
+html[data-variant="photo"] .workspace .journey-overview { display:grid; grid-template-columns:minmax(0,1fr); gap:9px; }
+html[data-variant="photo"] .workspace .journey-photo { width:100%; height:112px; }
+html[data-variant="photo"] .workspace .journey-overview h2 { font-size:18px; }
+
+
+html[data-variant="route"] .workspace .journey-card>.journey-country { order:0; }
+html[data-variant="route"] .workspace .journey-card>.journey-overview { order:1; }
+html[data-variant="route"] .workspace .journey-card>.journey-bottom { order:2; margin-top:0; padding:12px 0; border-bottom:1px solid var(--line); }
+html[data-variant="route"] .workspace .journey-card>.route-preview { order:3; border-top:0; margin-top:0; }
+html[data-variant="route"] .workspace .journey-card>.journey-services { order:4; }
+html[data-variant="route"] .workspace .journey-card>.journey-facts { order:5; padding-bottom:14px; }
+@media(max-width:767px) {
+  html[data-variant="photo"] .workspace .journey-photo { height:120px; }
+}

@@ -1,0 +1,636 @@
+[
+  {
+    "id": "mock-sochi-001",
+    "request": {
+      "origin": "Москва",
+      "destination": "Сочи",
+      "check_in": "2026-11-10",
+      "check_out": "2026-11-15",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "100000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1",
+      "name": "Демо-отель у моря (вымышленный)",
+      "city": "Сочи",
+      "check_in_at": "2026-11-10T14:00:00+03:00",
+      "check_out_at": "2026-11-15T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-10T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "30000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true,
+      "location_id": "property-sochi",
+      "timezone": "Europe/Moscow"
+    },
+    "outbound": {
+      "id": "demo-flight-out",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Сочи",
+      "departure_at": "2026-11-10T09:00:00+03:00",
+      "arrival_at": "2026-11-10T12:30:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound": {
+      "id": "demo-flight-back",
+      "mode": "flight",
+      "origin": "Сочи",
+      "destination": "Москва",
+      "departure_at": "2026-11-15T14:30:00+03:00",
+      "arrival_at": "2026-11-15T18:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "transfer": {
+      "id": "demo-transfer",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    }
+  },
+  {
+    "id": "mock-sochi-002-shifted",
+    "request": {
+      "origin": "Москва",
+      "destination": "Сочи",
+      "check_in": "2026-11-12",
+      "check_out": "2026-11-17",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "100000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1-shifted",
+      "name": "Демо-отель у моря (вымышленный)",
+      "city": "Сочи",
+      "check_in_at": "2026-11-12T14:00:00+03:00",
+      "check_out_at": "2026-11-17T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-12T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "33000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true,
+      "location_id": "property-sochi",
+      "timezone": "Europe/Moscow"
+    },
+    "outbound": {
+      "id": "demo-flight-out-shifted",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Сочи",
+      "departure_at": "2026-11-12T09:00:00+03:00",
+      "arrival_at": "2026-11-12T12:30:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound": {
+      "id": "demo-flight-back-shifted",
+      "mode": "flight",
+      "origin": "Сочи",
+      "destination": "Москва",
+      "departure_at": "2026-11-17T14:30:00+03:00",
+      "arrival_at": "2026-11-17T18:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      }
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "outbound_transfer-shifted",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound_transfer": {
+      "id": "inbound_transfer-shifted",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    }
+  },
+  {
+    "id": "mock-sochi-003-child",
+    "request": {
+      "origin": "Москва",
+      "destination": "Сочи",
+      "check_in": "2026-11-12",
+      "check_out": "2026-11-17",
+      "guests": {
+        "adults": 2,
+        "children_ages": [
+          7
+        ],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "100000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1-shifted-child",
+      "name": "Демо-отель у моря (вымышленный)",
+      "city": "Сочи",
+      "check_in_at": "2026-11-12T14:00:00+03:00",
+      "check_out_at": "2026-11-17T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-12T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "36000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true,
+      "location_id": "property-sochi",
+      "timezone": "Europe/Moscow"
+    },
+    "outbound": {
+      "id": "demo-flight-out-shifted-child",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Сочи",
+      "departure_at": "2026-11-12T09:00:00+03:00",
+      "arrival_at": "2026-11-12T12:30:00+03:00",
+      "price": {
+        "amount": "25000.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound": {
+      "id": "demo-flight-back-shifted-child",
+      "mode": "flight",
+      "origin": "Сочи",
+      "destination": "Москва",
+      "departure_at": "2026-11-17T14:30:00+03:00",
+      "arrival_at": "2026-11-17T18:00:00+03:00",
+      "price": {
+        "amount": "25000.00",
+        "currency": "RUB"
+      }
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "outbound_transfer-shifted-child",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    },
+    "inbound_transfer": {
+      "id": "inbound_transfer-shifted-child",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      }
+    }
+  },
+  {
+    "id": "mock-kzn-001",
+    "request": {
+      "origin": "Москва",
+      "destination": "Казань",
+      "check_in": "2026-11-10",
+      "check_out": "2026-11-15",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "250000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1",
+      "name": "Вымышленный демо-отель Казань",
+      "city": "Казань",
+      "check_in_at": "2026-11-10T14:00:00+03:00",
+      "check_out_at": "2026-11-15T12:00:00+03:00",
+      "latest_check_in_at": "2026-11-10T23:59:00+03:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "25000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true,
+      "location_id": "hotel-KZN",
+      "timezone": "Europe/Moscow"
+    },
+    "outbound": {
+      "id": "demo-flight-out",
+      "mode": "train",
+      "origin": "Москва",
+      "destination": "Казань",
+      "departure_at": "2026-11-09T22:00:00+03:00",
+      "arrival_at": "2026-11-10T12:30:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      },
+      "arrival_location": "KZN",
+      "departure_location": "MOW",
+      "international": false,
+      "segments": [
+        {
+          "origin": "MOW",
+          "destination": "KZN",
+          "departure_at": "2026-11-09T22:00:00+03:00",
+          "arrival_at": "2026-11-10T12:30:00+03:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    "inbound": {
+      "id": "demo-flight-back",
+      "mode": "train",
+      "origin": "Казань",
+      "destination": "Москва",
+      "departure_at": "2026-11-15T14:30:00+03:00",
+      "arrival_at": "2026-11-15T21:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      },
+      "arrival_location": "MOW",
+      "departure_location": "KZN",
+      "international": false,
+      "segments": [
+        {
+          "origin": "KZN",
+          "destination": "MOW",
+          "departure_at": "2026-11-15T14:30:00+03:00",
+          "arrival_at": "2026-11-15T21:00:00+03:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "mock-kzn-001-outbound",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      },
+      "origin": "KZN",
+      "destination": "hotel-KZN",
+      "child_seats": 1
+    },
+    "inbound_transfer": {
+      "id": "mock-kzn-001-inbound",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      },
+      "origin": "hotel-KZN",
+      "destination": "KZN",
+      "child_seats": 1
+    }
+  },
+  {
+    "id": "mock-dxb-001",
+    "request": {
+      "origin": "Москва",
+      "destination": "Дубай",
+      "check_in": "2026-11-10",
+      "check_out": "2026-11-15",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "250000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1",
+      "name": "Вымышленный демо-отель Дубай",
+      "city": "Дубай",
+      "check_in_at": "2026-11-10T14:00:00+04:00",
+      "check_out_at": "2026-11-15T12:00:00+04:00",
+      "latest_check_in_at": "2026-11-10T23:59:00+04:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "60000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true,
+      "location_id": "hotel-DXB",
+      "timezone": "Asia/Dubai"
+    },
+    "outbound": {
+      "id": "demo-flight-out",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Дубай",
+      "departure_at": "2026-11-10T09:00:00+03:00",
+      "arrival_at": "2026-11-10T12:30:00+04:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      },
+      "arrival_location": "DXB",
+      "departure_location": "MOW",
+      "international": true,
+      "segments": [
+        {
+          "origin": "MOW",
+          "destination": "DXB",
+          "departure_at": "2026-11-10T09:00:00+03:00",
+          "arrival_at": "2026-11-10T12:30:00+04:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Asia/Dubai"
+        }
+      ]
+    },
+    "inbound": {
+      "id": "demo-flight-back",
+      "mode": "flight",
+      "origin": "Дубай",
+      "destination": "Москва",
+      "departure_at": "2026-11-15T14:30:00+04:00",
+      "arrival_at": "2026-11-15T21:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      },
+      "arrival_location": "MOW",
+      "departure_location": "DXB",
+      "international": true,
+      "segments": [
+        {
+          "origin": "DXB",
+          "destination": "MOW",
+          "departure_at": "2026-11-15T14:30:00+04:00",
+          "arrival_at": "2026-11-15T21:00:00+03:00",
+          "departure_timezone": "Asia/Dubai",
+          "arrival_timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "mock-dxb-001-outbound",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      },
+      "origin": "DXB",
+      "destination": "hotel-DXB",
+      "child_seats": 1
+    },
+    "inbound_transfer": {
+      "id": "mock-dxb-001-inbound",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      },
+      "origin": "hotel-DXB",
+      "destination": "DXB",
+      "child_seats": 1
+    }
+  },
+  {
+    "id": "mock-hrg-001",
+    "request": {
+      "origin": "Москва",
+      "destination": "Хургада",
+      "check_in": "2026-11-10",
+      "check_out": "2026-11-15",
+      "guests": {
+        "adults": 2,
+        "children_ages": [],
+        "pets": 0
+      },
+      "budget": {
+        "amount": "250000.00",
+        "currency": "RUB"
+      },
+      "breakfast_required": true,
+      "min_stars": 3
+    },
+    "hotel": {
+      "id": "demo-hotel-1",
+      "name": "Вымышленный демо-отель Хургада",
+      "city": "Хургада",
+      "check_in_at": "2026-11-10T14:00:00+02:00",
+      "check_out_at": "2026-11-15T12:00:00+02:00",
+      "latest_check_in_at": "2026-11-10T23:59:00+02:00",
+      "stars": 3,
+      "rating": 8.5,
+      "review_count": 100,
+      "breakfast": true,
+      "pets_allowed": null,
+      "price": {
+        "amount": "50000.00",
+        "currency": "RUB"
+      },
+      "max_guests": 3,
+      "children_allowed": true,
+      "location_id": "hotel-HRG",
+      "timezone": "Africa/Cairo"
+    },
+    "outbound": {
+      "id": "demo-flight-out",
+      "mode": "flight",
+      "origin": "Москва",
+      "destination": "Хургада",
+      "departure_at": "2026-11-10T09:00:00+03:00",
+      "arrival_at": "2026-11-10T12:30:00+02:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      },
+      "arrival_location": "HRG",
+      "departure_location": "MOW",
+      "international": true,
+      "segments": [
+        {
+          "origin": "MOW",
+          "destination": "HRG",
+          "departure_at": "2026-11-10T09:00:00+03:00",
+          "arrival_at": "2026-11-10T12:30:00+02:00",
+          "departure_timezone": "Europe/Moscow",
+          "arrival_timezone": "Africa/Cairo"
+        }
+      ]
+    },
+    "inbound": {
+      "id": "demo-flight-back",
+      "mode": "flight",
+      "origin": "Хургада",
+      "destination": "Москва",
+      "departure_at": "2026-11-15T14:30:00+02:00",
+      "arrival_at": "2026-11-15T21:00:00+03:00",
+      "price": {
+        "amount": "20000.00",
+        "currency": "RUB"
+      },
+      "arrival_location": "MOW",
+      "departure_location": "HRG",
+      "international": true,
+      "segments": [
+        {
+          "origin": "HRG",
+          "destination": "MOW",
+          "departure_at": "2026-11-15T14:30:00+02:00",
+          "arrival_at": "2026-11-15T21:00:00+03:00",
+          "departure_timezone": "Africa/Cairo",
+          "arrival_timezone": "Europe/Moscow"
+        }
+      ]
+    },
+    "provenance": {
+      "provider": "synthetic-fixture",
+      "kind": "mock",
+      "fetched_at": "2026-10-25T00:00:00Z",
+      "valid_until": "2026-12-01T00:00:00Z"
+    },
+    "outbound_transfer": {
+      "id": "mock-hrg-001-outbound",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      },
+      "origin": "HRG",
+      "destination": "hotel-HRG",
+      "child_seats": 1
+    },
+    "inbound_transfer": {
+      "id": "mock-hrg-001-inbound",
+      "duration_minutes": 45,
+      "capacity": 3,
+      "pets_allowed": null,
+      "price": {
+        "amount": "1500.00",
+        "currency": "RUB"
+      },
+      "origin": "hotel-HRG",
+      "destination": "HRG",
+      "child_seats": 1
+    }
+  }
+]

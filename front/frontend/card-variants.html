@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>О!дин запрос · Варианты карточки</title>
+  <link rel="icon" href="/favicon.svg" />
+  <style>
+    html,body { margin:0; height:100%; }
+    iframe { display:block; width:100%; height:100%; border:0; }
+    .variant-picker { position:fixed; top:8px; left:50%; translate:-50% 0; z-index:2147483647; display:flex; gap:2px; padding:4px; border-radius:999px; background:rgb(20 20 20 / .9); box-shadow:inset 0 0 0 1px rgb(255 255 255 / .1),0 8px 24px rgb(0 0 0 / .25); font:13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; user-select:none; }
+    .variant-picker[hidden] { display:none; }
+    .variant-picker button { padding:7px 14px; border:0; border-radius:999px; background:none; color:rgb(255 255 255 / .7); font:inherit; white-space:nowrap; cursor:pointer; min-height:36px; }
+    .variant-picker button:hover { color:rgb(255 255 255 / .9); }
+    .variant-picker button[aria-current="true"] { background:rgb(255 255 255 / .14); color:white; }
+    .variant-picker button:focus-visible { outline:2px solid white; outline-offset:2px; }
+    @media(max-width:390px) { .variant-picker button { padding:7px 10px; font-size:12px; } }
+  </style>
+</head>
+<body>
+  <iframe id="preview" src="/card-variant-frame.html" title="Рабочий экран с вариантами карточек путешествий"></iframe>
+  <nav class="variant-picker" aria-label="Варианты карточки путешествия">
+    <button type="button" data-variant="horizontal">Горизонтальная</button>
+    <button type="button" data-variant="photo">Фото сверху</button>
+    <button type="button" data-variant="route">Цена и маршрут</button>
+  </nav>
+  <script>
+    const names = ['horizontal', 'photo', 'route'];
+    const frame = document.getElementById('preview');
+    const buttons = [...document.querySelectorAll('.variant-picker button')];
+    function active() { const value = new URL(location.href).searchParams.get('variant'); return names.includes(value) ? value : names[0]; }
+    function render() {
+      const value = active();
+      buttons.forEach(button => button.setAttribute('aria-current', String(button.dataset.variant === value)));
+      if (frame.contentDocument) frame.contentDocument.documentElement.dataset.variant = value;
+    }
+    function select(value) { const url = new URL(location.href); url.searchParams.set('variant',value); history.replaceState(null,'',url); render(); }
+    function keys(event) {
+      const target = event.target;
+      if (target && target.nodeType === 1 && target.closest('input,textarea,select,[contenteditable="true"]')) return;
+      let index = names.indexOf(active());
+      if (event.key === 'ArrowRight') index = (index + 1) % names.length;
+      else if (event.key === 'ArrowLeft') index = (index + names.length - 1) % names.length;
+      else if (['1','2','3'].includes(event.key)) index = Number(event.key)-1;
+      else return;
+      event.preventDefault(); select(names[index]);
+    }
+    buttons.forEach(button => button.addEventListener('click',() => select(button.dataset.variant)));
+    window.addEventListener('keydown',keys);
+    window.addEventListener('popstate',render);
+    frame.addEventListener('load',() => { render(); frame.contentDocument.addEventListener('keydown',keys); const picker=document.querySelector('.variant-picker'); const sync=() => { picker.hidden=!!frame.contentDocument.querySelector('dialog[open],[role=dialog]'); }; new MutationObserver(sync).observe(frame.contentDocument.body,{childList:true,subtree:true,attributes:true,attributeFilter:['open']}); sync(); });
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+[
+  {
+    "provider": "open-meteo",
+    "query": {
+      "latitude": 43.6,
+      "longitude": 39.73,
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-10"
+    },
+    "data": {
+      "kind": "forecast",
+      "timezone": "UTC",
+      "days": [
+        {
+          "date": "2026-11-10",
+          "min_c": 10,
+          "max_c": 17
+        }
+      ]
+    }
+  },
+  {
+    "provider": "osrm",
+    "query": {
+      "origin": {
+        "latitude": 43.45,
+        "longitude": 39.96
+      },
+      "destination": {
+        "latitude": 43.6,
+        "longitude": 39.73
+      }
+    },
+    "data": {
+      "distance_m": 30000,
+      "duration_seconds": 2700,
+      "fare": null
+    }
+  },
+  {
+    "provider": "overpass",
+    "query": {
+      "latitude": 43.6,
+      "longitude": 39.73,
+      "category": "beach",
+      "radius_m": 1500
+    },
+    "data": [
+      {
+        "id": "mock/beach1",
+        "name": "Вымышленный демо-пляж",
+        "category": "beach"
+      }
+    ]
+  },
+  {
+    "provider": "travelpayouts-data",
+    "query": {
+      "origin": "MOW",
+      "destination": "AER",
+      "departure_date": "2026-11-10",
+      "return_date": "2026-11-15"
+    },
+    "data": [
+      {
+        "origin": "MOW",
+        "destination": "AER",
+        "departure_at": "2026-11-10T09:00:00Z",
+        "return_at": "2026-11-15T14:30:00Z",
+        "expires_at": "2026-11-01T00:00:00Z",
+        "price": {
+          "amount": "20000.00",
+          "currency": "RUB"
+        },
+        "price_basis": "provider_cached_ticket",
+        "bookable": false
+      }
+    ]
+  }
+]

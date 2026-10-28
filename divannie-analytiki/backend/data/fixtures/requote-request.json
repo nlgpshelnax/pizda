@@ -1,0 +1,21 @@
+{
+  "request": {
+    "origin": "Москва",
+    "destination": "Сочи",
+    "check_in": "2026-11-12",
+    "check_out": "2026-11-17",
+    "guests": {
+      "adults": 2,
+      "children_ages": [],
+      "pets": 0
+    },
+    "budget": {
+      "amount": "100000.00",
+      "currency": "RUB"
+    },
+    "breakfast_required": true,
+    "min_stars": 3
+  },
+  "plan_version": 2,
+  "previous_bundle_id": "mock-sochi-001"
+}
